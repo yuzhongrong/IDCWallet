@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.shuweikeji.qrcode.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp64"
+            android:gravity="center_vertical"
+            android:background="@color/tipper_blue_color">
+
+            <LinearLayout
+                android:id="@+id/mr_back_layout"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp24">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp28"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:src="@mipmap/icon_back" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_set_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dp44"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingTop="@dimen/dp24"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/er_sao"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dp16" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/control_panel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp90"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:alpha="1"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp0"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:paddingTop="@dimen/dp0">
+
+            <TextView
+                android:id="@+id/light_on_button"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:drawableTop="@drawable/qr_qb_scan_flash_button"
+                android:gravity="center_horizontal"
+                android:text="@string/light_on_btn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/status_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp210"
+            android:background="#00000030"
+            android:gravity="center|bottom"
+            android:layout_centerInParent="true"
+            android:text="@string/extension_qrcode_scan_help_tip_login"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dp13" />
+    </RelativeLayout>
+
+</FrameLayout>

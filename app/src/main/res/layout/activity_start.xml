@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/pin_exit_login"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp60"
+        android:text="@string/exit"
+        android:textSize="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp12"
+        android:gravity="center|bottom"
+        android:textColor="@color/tip_black"
+        android:paddingBottom="@dimen/dp6"/>
+    <ImageView
+        android:id="@+id/img_start"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_marginTop="@dimen/dp86"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp19"
+        android:src="@mipmap/img_pin_header" />
+
+    <LinearLayout
+        android:id="@+id/ll_start_siglar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_start"
+        android:layout_marginTop="@dimen/dp24"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_btc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tip_black"
+                android:textSize="@dimen/sp15"
+                android:text="BTC" />
+
+            <TextView
+                android:id="@+id/tv_btc_price"
+                android:text=""
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/tip_black"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp2"
+                android:fontFamily="sans-serif-light" />
+        </LinearLayout>
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp28"
+            android:layout_marginTop="@dimen/dp4"
+            android:layout_marginBottom="@dimen/dp4"
+            android:background="@color/gray_line_90" />
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_eth_name"
+                android:textColor="@color/tip_black"
+                android:textSize="@dimen/sp15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ETH" />
+
+            <TextView
+                android:id="@+id/tv_eth_price"
+                android:text=""
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/tip_black"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp2"
+                android:fontFamily="sans-serif-light" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_start_siglar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp32"
+        android:text="@string/input_pin"
+        android:textColor="@color/tip_gray_black"
+        android:textSize="@dimen/sp15" />
+
+
+
+
+
+    <View
+        android:id="@+id/view_start"
+        android:layout_below="@id/tv_start"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_height="@dimen/d1"
+        android:layout_marginLeft="@dimen/dp32"
+        android:layout_marginRight="@dimen/dp32"
+        android:background="@color/gray_line_90"/>
+
+    <RelativeLayout
+        android:id="@+id/ll_start"
+        android:layout_width="@dimen/dp334"
+        android:layout_height="@dimen/dp40"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/dp22"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_below="@+id/view_start"
+        android:paddingRight="@dimen/dp22">
+
+
+        <com.idcg.idcw.widget.NewPasswordView
+            android:id="@+id/passwordView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:cipherEnable="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_start_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:layout_below="@+id/ll_start"
+        android:layout_marginLeft="@dimen/dp32"
+        android:layout_marginRight="@dimen/dp32"
+        android:background="@color/gray_line_90" />
+
+    <TextView
+        android:id="@+id/pin_forget_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp22"
+        android:text="@string/tv_forget"
+        android:textSize="@dimen/sp14"
+        android:visibility="gone"
+        android:layout_below="@+id/ll_start"
+        android:layout_marginRight="@dimen/dp22"
+        android:layout_marginTop="@dimen/dp12"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/tian_tip_blue"/>
+
+    <com.idcg.idcw.widget.NewKeyBoard
+        android:id="@+id/pin_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp220"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+    </com.idcg.idcw.widget.NewKeyBoard>
+</RelativeLayout>

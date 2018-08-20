@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_shuzi_currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tian_blue"
+            android:text="@string/tv_no_other_currency"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tian_blue"
+            android:paddingLeft="2dp"
+            android:text="@string/new_currency_come"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7F7F7"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="7dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+
+            <com.idcg.idcw.widget.SearchEditText
+                android:id="@+id/query"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_weight="5"
+                android:background="@drawable/item_gray_white"
+                android:drawableLeft="@mipmap/img_add_search"
+                android:drawableRight="@mipmap/icon_delete"
+                android:hint="@string/tv_search"
+                android:layout_gravity="center"
+                android:imeOptions="actionSearch"
+                android:drawablePadding="@dimen/d6"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textColor="#333"
+                android:textColorHint="#aaa"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_collection"
+            android:layout_gravity="center"
+            android:textColor="#999999"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/d8"
+            android:gravity="center|right"/>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smartrefreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_add_currency"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:overScrollMode="never"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_total_data">
+
+        </android.support.v7.widget.RecyclerView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/tv_add_currency_sure"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/sw_orange_btn_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/sure"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/gray_black"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_delete_text"/>
+
+</RelativeLayout>

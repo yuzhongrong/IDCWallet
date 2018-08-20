@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp64"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/mr_back_layout"
+                android:layout_width="@dimen/dp44"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp16">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="@dimen/dp18"
+                    android:layout_height="@dimen/dp18"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:src="@mipmap/img_find_back" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_set_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dp44"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingTop="@dimen/dp16"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/str_recovery_asset"
+                android:textColor="@color/tip_black"
+                android:textSize="@dimen/sp17"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_twelve_phrase"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_no_phrase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp50"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp223"
+                    android:src="@mipmap/icon_notico_no_data" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp32"
+                    android:gravity="center"
+                    android:text="@string/str_no_phrase"
+                    android:textColor="@color/tip_black"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_recovery_phrase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/ll_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_view"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:gravity="center"
+                        android:text="@string/input_twelve_phrase"
+                        android:textColor="@color/tip_black"
+                        android:textSize="@dimen/sp14" />
+
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/dp300"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp16">
+
+                        <LinearLayout
+                            android:id="@+id/ll_find_last"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/dp300"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dp16"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_find_one"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/ed_find_one"
+                                        android:layout_width="@dimen/dp85"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:hint="1"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textColor="@color/tip_black"
+                                        android:textColorHint="@color/white_gray"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <View
+                                        android:id="@+id/view_one"
+                                        android:layout_width="@dimen/dp140"
+                                        android:layout_height="0.5dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dp5"
+                                        android:background="@color/sw_arrow_bg" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_find_two"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp16"
+                                    android:layout_marginRight="@dimen/dp16"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/ed_find_two"
+                                        android:layout_width="@dimen/dp85"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:hint="2"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textColor="@color/tip_black"
+                                        android:textColorHint="@color/white_gray"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <View
+                                        android:id="@+id/view_two"
+                                        android:layout_width="140dp"
+                                        android:layout_height="0.5dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dp5"
+                                        android:background="@color/sw_arrow_bg" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_find_three"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/ed_find_three"
+                                        android:layout_width="@dimen/dp85"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:hint="3"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textColor="@color/tip_black"
+                                        android:textColorHint="@color/white_gray"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <View
+                                        android:id="@+id/view_three"
+                                        android:layout_width="140dp"
+                                        android:layout_height="0.5dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dp5"
+                                        android:background="@color/sw_arrow_bg" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/dp300"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dp16"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_find_four"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/ed_find_four"
+                                        android:layout_width="@dimen/dp85"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:hint="4"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textColor="@color/tip_black"
+                                        android:textColorHint="@color/white_gray"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <View
+                                        android:id="@+id/view_four"
+                                        android:layout_width="@dimen/dp140"
+                                        android:layout_height="0.5dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dp5"
+                                        android:background="@color/sw_arrow_bg" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_find_five"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp16"
+                                    android:layout_marginRight="@dimen/dp16"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/ed_find_five"
+                                        android:layout_width="@dimen/dp85"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:hint="5"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textColor="@color/tip_black"
+                                        android:textColorHint="@color/white_gray"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <View
+                                        android:id="@+id/view_five"
+                                        android:layout_width="140dp"
+                                        android:layout_height="0.5dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dp5"
+                                        android:background="@color/sw_arrow_bg" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_find_six"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/ed_find_six"
+                                        android:layout_width="@dimen/dp85"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:hint="6"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textColor="@color/tip_black"
+                                        android:textColorHint="@color/white_gray"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <View
+                                        android:id="@+id/view_six"
+                                        android:layout_width="140dp"
+                                        android:layout_height="0.5dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dp5"
+                                        android:background="@color/sw_arrow_bg" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/dp300"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dp16"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_find_seven"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/ed_find_seven"
+                                        android:layout_width="@dimen/dp85"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:hint="7"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textColor="@color/tip_black"
+                                        android:textColorHint="@color/white_gray"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <View
+                                        android:id="@+id/view_seven"
+                                        android:layout_width="@dimen/dp140"
+                                        android:layout_height="0.5dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dp5"
+                                        android:background="@color/sw_arrow_bg" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_find_eight"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp16"
+                                    android:layout_marginRight="@dimen/dp16"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/ed_find_eight"
+                                        android:layout_width="@dimen/dp85"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:hint="8"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textColor="@color/tip_black"
+                                        android:textColorHint="@color/white_gray"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <View
+                                        android:id="@+id/view_eight"
+                                        android:layout_width="140dp"
+                                        android:layout_height="0.5dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dp5"
+                                        android:background="@color/sw_arrow_bg" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_find_nine"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/ed_find_nine"
+                                        android:layout_width="@dimen/dp85"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:hint="9"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textColor="@color/tip_black"
+                                        android:textColorHint="@color/white_gray"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <View
+                                        android:id="@+id/view_nine"
+                                        android:layout_width="140dp"
+                                        android:layout_height="0.5dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dp5"
+                                        android:background="@color/sw_arrow_bg" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/dp300"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dp16"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_find_ten"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/ed_find_ten"
+                                        android:layout_width="@dimen/dp85"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:hint="10"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textColor="@color/tip_black"
+                                        android:textColorHint="@color/white_gray"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <View
+                                        android:id="@+id/view_ten"
+                                        android:layout_width="@dimen/dp140"
+                                        android:layout_height="0.5dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dp5"
+                                        android:background="@color/sw_arrow_bg" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_find_eleven"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp16"
+                                    android:layout_marginRight="@dimen/dp16"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/ed_find_eleven"
+                                        android:layout_width="@dimen/dp85"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:hint="11"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textColor="@color/tip_black"
+                                        android:textColorHint="@color/white_gray"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <View
+                                        android:id="@+id/view_eleven"
+                                        android:layout_width="140dp"
+                                        android:layout_height="0.5dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dp5"
+                                        android:background="@color/sw_arrow_bg" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_find_twelve"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/ed_find_twelve"
+                                        android:layout_width="@dimen/dp85"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:hint="12"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textColor="@color/tip_black"
+                                        android:textColorHint="@color/white_gray"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <View
+                                        android:id="@+id/view_twelve"
+                                        android:layout_width="140dp"
+                                        android:layout_height="0.5dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dp5"
+                                        android:background="@color/sw_arrow_bg" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_find_next_step"
+                    android:layout_width="@dimen/dp299"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_below="@+id/ll_main"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp40"
+                    android:background="@drawable/item_gray_black"
+                    android:gravity="center"
+                    android:text="@string/tv_sure"
+                    android:textAllCaps="false"
+                    android:textColor="@color/gray_90"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp18"
+                    android:gravity="center"
+                    android:text="@string/str_not_support_idcw_phrase"
+                    android:textColor="@color/tip_black"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:visibility="gone"
+        android:layout_margin="@dimen/dp20"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

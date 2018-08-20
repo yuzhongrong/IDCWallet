@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activitys.OTCActivity">
+
+    <include layout="@layout/main_set_title"/>
+
+    <ImageView
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp110"
+        android:layout_marginTop="@dimen/dp60"
+        android:layout_gravity="center"
+        android:src="@mipmap/img_market_clear"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp12"
+        android:textColor="@color/tip_black"
+        android:textSize="@dimen/sp14"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_open_market"/>
+</LinearLayout>

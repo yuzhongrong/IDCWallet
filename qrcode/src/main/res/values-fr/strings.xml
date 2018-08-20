@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="app_name">二维码</string>-->
+    <string name="create_name">Entrez les informations</string>
+    <string name="edit_name">Modifier le code QR</string>
+    <!-- 二维码扫描 -->
+    <string name="extension_qrcode_scan_help_tips">"Veuillez aligner le viseur avec le code QR pour scanner automatiquement."</string>
+    <string name="album_btn">Album photo</string>
+    <string name="light_on_btn">Lumières</string>
+    <string name="light_off_btn">Éteins la lumière</string>
+    <string name="my_qrcode">Mon code QR</string>
+    <string name="scan_tip">S il vous plaît placer le code QR dans le cadre pour numériser</string>
+    <string name="scan_retry">Erreur de numérisation de code à deux dimensions, veuillez réanalyser</string>
+    <string name="scan_title">Balayer</string>
+    <string name="scan_title_result">Résultats de l analyse</string>
+    <string name="QRCreate_noContent">Le contenu est vide！</string>
+    <string name="save_to_picture">Enregistrer dans local</string>
+    <string name="press_again_exit">Appuyez à nouveau pour quitter...</string>
+
+    <!-- ssss -->
+    <string name="screenshot_saving_ticker" msgid="7403652894056693515">"Enregistrement du code QR..."</string>
+    <string name="screenshot_saving_title" msgid="8242282144535555697">"Enregistrement du code QR..."</string>
+    <string name="screenshot_saving_text" msgid="2419718443411738818">"Enregistrement du code QR."</string>
+    <string name="screenshot_saved_title" msgid="6461865960961414961">"Code QR capturé."</string>
+    <string name="screenshot_saved_text" msgid="1152839647677558815">"Touchez pour voir votre code QR."</string>
+    <string name="screenshot_failed_title" msgid="705781116746922771">"Impossible de capturer le code QR."</string>
+    <string name="screenshot_failed_text" msgid="8134011269572415402">"Impossible d enregistrer le code QR. Le périphérique de stockage peut être utilisé."</string>
+    <string name="doing_sao">Numérisation...</string>
+    <string name="select_sao_picture">Sélectionnez la photo de code QR</string>
+    <string name="error_restart_select">La numérisation a échoué, veuillez sélectionner à nouveau！</string>
+    <string name="er_sao">Balayage de code QR</string>
+    <string name="extension_qrcode_scan_help_tip_login">"Uniquement pour une connexion autorisée, ne pas scanner l adresse de la caisse enregistreuse"</string>
+</resources>

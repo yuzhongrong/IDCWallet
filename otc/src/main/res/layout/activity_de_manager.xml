@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f7f7f7"
+    android:orientation="vertical">
+
+    <include layout="@layout/blue_main_title"
+        android:id="@+id/tl_deposit"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_hint_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/tl_deposit"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp12"
+            android:text="@string/str_otc_deposit_manager_title"
+            android:textColor="@color/tip_gray"
+            android:textSize="@dimen/sp12" />
+
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/rv_deposit"
+            android:layout_below="@+id/tv_hint_deposit"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+        <TextView
+            android:id="@+id/btn_get_deposit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp16"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp12"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dp22"
+            android:visibility="visible"
+            android:background="@drawable/sw_ripple_btn_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/str_otc_get_deposit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+
+</RelativeLayout>

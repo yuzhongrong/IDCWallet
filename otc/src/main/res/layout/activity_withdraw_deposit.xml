@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f7f7f7">
+
+    <include layout="@layout/blue_main_title"/>
+
+    <RelativeLayout
+        android:id="@+id/ll_select_curr"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_otc_deposit_curr"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/sp12"
+            android:textColor="@color/color_666666"
+            android:paddingLeft="@dimen/dp12"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp12"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_curr_and_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/img_select"
+                        android:layout_width="@dimen/dp28"
+                        android:layout_height="@dimen/dp28"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/dp4"
+                        android:src="@mipmap/icon_vhkd"/>
+
+                    <TextView
+                        android:id="@+id/tv_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BTC"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:textColor="@color/tip_black"
+                        android:layout_toRightOf="@+id/img_right"
+                        android:textSize="@dimen/sp12"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_select_curr_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/c_FF999999"
+                    android:gravity="center"
+                    android:text="@string/str_otc_select_curr"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_toRightOf="@+id/tv_right"
+                android:src="@mipmap/arrow_down"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_marginLeft="@dimen/dp12"
+        android:background="@color/d_dddddd"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/pay_method_alipay_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_666666"
+            android:paddingLeft="@dimen/dp12"
+            android:text="@string/str_otc_recharge_deposit_amount"
+            android:textSize="@dimen/sp12"/>
+
+        <EditText
+            android:id="@+id/ed_amount_down_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/pay_method_alipay_account_tv"
+            android:layout_alignBottom="@+id/pay_method_alipay_account_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="@string/str_otc_input_withdraw_amount"
+            android:inputType="numberDecimal"
+            android:paddingRight="@dimen/dp12"
+            android:textColorHint="@color/c_FF999999"
+            android:textSize="@dimen/sp12"
+            android:visibility="visible" />
+        <EditText
+            android:id="@+id/ed_up_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginStart="@dimen/dp12"
+            android:paddingRight="@dimen/dp6"
+            android:layout_toRightOf="@+id/pay_method_alipay_account_tv"
+            android:layout_toLeftOf="@+id/tv_curr_type_one"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:visibility="gone"
+            android:textColorHint="@color/c_FF999999"
+            android:inputType="numberDecimal"
+            android:hint="@string/str_otc_input_withdraw_amount"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_curr_type_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VHD"
+            android:gravity="center"
+            android:visibility="gone"
+            android:clickable="false"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dp12"
+            android:textSize="@dimen/sp12"
+            android:textColor="@color/tip_black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp12"
+            android:gravity="center|right"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"
+        android:background="@color/c_f7f7f7"/>
+    <LinearLayout
+        android:id="@+id/ll_withdraw_deposit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center|right"
+        android:visibility="gone"
+        android:paddingTop="@dimen/dp5"
+        android:paddingBottom="@dimen/dp5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/str_otc_deposit_balance"
+            android:textColor="@color/tip_gray_black"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_withdraw_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp12"
+            android:paddingRight="@dimen/dp12"
+            android:textColor="@color/tip_gray_black"
+            android:text=""/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"
+        android:background="@color/c_f7f7f7"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="@dimen/dp12"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center|left"
+                            android:text="@string/address"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tv_copy_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@drawable/app_item_check_ripple"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dp8"
+                            android:paddingRight="@dimen/dp8"
+                            android:text="@string/tx_copy"
+                            android:textColor="@drawable/app_tipper_blue_color"
+                            android:textSize="@dimen/sp10" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="@dimen/dp12"
+                        android:layout_marginRight="@dimen/dp45"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <foxidcw.android.idcw.common.widget.ClearableEditText
+                            android:id="@+id/ed_account"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:hint="@string/please_input_add"
+                            android:paddingRight="@dimen/dp4"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/tip_black"
+                            android:textColorHint="@color/white_gray"
+                            android:textSize="@dimen/sp12" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="@dimen/dp4"
+                        android:layout_marginLeft="@dimen/dp12"
+                        android:background="@color/sw_arrow_line" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sao_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp12"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_code"
+                android:layout_width="32dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:clickable="false"
+                android:src="@mipmap/icon_sao"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp6"
+                android:text="@string/sao_yi_sao"
+                android:textColor="@color/tian_tip_blue"
+                android:textSize="@dimen/sp10" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_accept_buy_curr"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginRight="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp22"
+        android:layout_height="@dimen/dp40"
+        android:layout_gravity="center"
+        android:background="@drawable/sw_rounded_btn_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/str_otc_withdraw_deposit"
+        android:textAllCaps="false"
+        android:textColor="@color/color_a0a2b1"
+        android:textSize="@dimen/sp15" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <!--<string name="app_name">FingerLibrary</string>-->
+    <string name="verify_error">指纹验证失败,转密码验证</string>
+    <string name="verify_failed">再试一次</string>
+    <string name="start_failed">开始失败，设备暂时锁定</string>
+    <string name="verify_error_text">Touch ID验证失败</string>
+    <string name="after_try">Touch验证太过频繁，请稍后重试</string>
+    <string name="device_not_support">设备不支持</string>
+    <string name="set_touch">未设置Touch ID，请设置Touch ID</string>
+    <string name="touch_pay">的Touch ID</string>
+    <string name="touch_pay_less">请以指纹验证解锁</string>
+    <string name="str_cancel">取消</string>
+    <string name="inout_pass">输入密码</string>
+    <string name="inout_pin">输入PIN</string>
+</resources>

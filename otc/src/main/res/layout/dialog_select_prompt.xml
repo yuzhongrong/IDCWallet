@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:gravity="bottom"
+              android:layout_gravity="bottom"
+              android:orientation="vertical"
+    >
+
+
+    <Button
+        android:clickable="false"
+        android:id="@+id/btn_prompt"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:background="@color/white"
+        android:textColorHint="@color/c_FF999999"
+        android:textSize="@dimen/sp14"
+        tools:text="提示"
+        android:textAllCaps="false"
+        android:textColor="@color/color_333333" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/d_dddddd" />
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="确认"
+        android:padding="@dimen/dp10"
+        android:textAllCaps="false"
+        android:background="@color/white"
+        android:textSize="@dimen/sp14"
+        android:textColor="@color/color_FFFF6666" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/c_707070" />
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btn_cancel"
+        android:padding="@dimen/dp10"
+        tools:text="取消"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp14"
+        android:textAllCaps="false"
+        android:textColor="@color/color_333333" />
+
+</LinearLayout>

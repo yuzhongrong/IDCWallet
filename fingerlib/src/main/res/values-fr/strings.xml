@@ -1,0 +1,15 @@
+<resources>
+    <!--<string name="app_name">FingerLibrary</string>-->
+    <string name="verify_error">Touch ID Vérifier l erreur</string>
+    <string name="verify_failed">Essayez à nouveau</string>
+    <string name="start_failed">Échec du démarrage, appareil temporairement bloqué</string>
+    <string name="verify_error_text">Touch ID Vérifier l erreur</string>
+    <string name="after_try">Touch ID Souvent，Veuillez réessayer plus tard</string>
+    <string name="device_not_support">Le périphérique ne prend pas en charge</string>
+    <string name="set_touch">Non défini Touch ID，Paramètres Touch ID</string>
+    <string name="touch_pay">Touch ID</string>
+    <string name="touch_pay_less">Touch ID Vérifier</string>
+    <string name="str_cancel">Annulation</string>
+    <string name="inout_pass">Entrer le mot</string>
+    <string name="inout_pin">Entrée PIN</string>
+</resources>

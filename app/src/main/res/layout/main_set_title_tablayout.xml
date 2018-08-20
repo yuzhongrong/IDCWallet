@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    xmlns:tl="http://schemas.android.com/tools"
+    android:background="@color/tipper_blue_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/mr_back_layout"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp22">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp25"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp12"
+                android:src="@mipmap/icon_back" />
+
+        </LinearLayout>
+
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp32"
+            android:layout_marginLeft="@dimen/dp60"
+            android:layout_marginRight="@dimen/dp12"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp6"
+            android:layout_marginTop="@dimen/dp20"
+            app:tl_textsize="@dimen/sp_16"
+            android:layout_centerInParent="true"
+            app:tl_indicator_color="@color/white"
+            app:tl_indicator_width_equal_title="true"
+            app:tl_indicator_corner_radius="@dimen/dp5"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingTop="16dp">
+
+            <ImageView
+                android:id="@+id/img_code"
+                android:layout_width="@dimen/sp18"
+                android:layout_height="@dimen/sp18"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="@dimen/dp12"
+                android:src="@mipmap/img_white_sao"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="app_name">FingerLibrary</string>-->
+    <string name="verify_error">指紋驗證失敗,轉密碼驗證</string>
+    <string name="verify_failed">再試一次</string>
+    <string name="start_failed">開始失敗，設備暫時鎖定</string>
+    <string name="verify_error_text">Touch ID驗證失敗</string>
+    <string name="after_try">Touch驗證太過頻繁，請稍後重試</string>
+    <string name="device_not_support">設備不支持</string>
+    <string name="set_touch">未設置Touch ID，请設置Touch ID</string>
+    <string name="touch_pay">的Touch ID</string>
+    <string name="touch_pay_less">請以指紋驗證解鎖</string>
+    <string name="str_cancel">取消</string>
+    <string name="inout_pass">輸入密碼</string>
+    <string name="inout_pin">輸入PIN</string>
+</resources>

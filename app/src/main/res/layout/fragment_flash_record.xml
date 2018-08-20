@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_f6f6f6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/bg_view"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp300"/>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:id="@+id/smartrefreshlayout"
+    app:srlDisableContentWhenRefresh="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.design.widget.CoordinatorLayout
+                                                 android:id="@+id/coordinator_Layout"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:background="@color/white"
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:expandedTitleGravity="top|center_horizontal"
+            app:expandedTitleMarginBottom="@dimen/dp100"
+            app:expandedTitleMarginStart="@dimen/dp10"
+            app:expandedTitleMarginTop="@dimen/dp42"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarLayout_style"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+            <include
+                layout="@layout/header_bibi"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40">
+
+            <ImageView
+                android:layout_width="@dimen/dp3"
+                android:layout_height="@dimen/dp14"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginStart="@dimen/dp12"
+                android:src="@mipmap/icon_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp4"
+                android:layout_marginStart="@dimen/dp4"
+                android:text="@string/bibi_flash_record"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp12" />
+        </LinearLayout>
+        <View
+            android:background="@color/c_DDDDDD"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/color_f6f6f6"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</android.support.design.widget.CoordinatorLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</FrameLayout>

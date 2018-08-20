@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/blue_main_title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_apply_step_layout" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp14"
+            android:background="@color/c_f7f7f7"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="@dimen/dp66"
+                android:layout_height="@dimen/dp66"
+                android:src="@mipmap/otc_icon_acceptance_success"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp66"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tip_black"
+                android:textSize="@dimen/sp13"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp28"
+                android:text="@string/str_otc_recharge_deposit_success_text"/>
+
+            <TextView
+                android:id="@+id/btn_accept_recharge_deposit"
+                android:layout_width="@dimen/dp245"
+                android:layout_height="@dimen/dp40"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginRight="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp62"
+                android:background="@drawable/sw_rounded_btn_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp15" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

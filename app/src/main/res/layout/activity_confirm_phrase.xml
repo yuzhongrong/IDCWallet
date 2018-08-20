@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_set_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:text="@string/please_rem_phrase"
+                android:textColor="@color/tip_black"
+                android:textSize="@dimen/sp14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp130"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/bg_re_phrase"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_phrase"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp168"
+                android:layout_marginLeft="@dimen/dp18"
+                android:layout_marginRight="@dimen/dp18"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp48"
+                android:visibility="visible">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/btn_phrase_verify"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp42"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp60"
+                android:layout_marginLeft="@dimen/dp22"
+                android:layout_marginRight="@dimen/dp22"
+                android:layout_marginTop="@dimen/dp80"
+                android:background="@drawable/item_gray_black"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/tv_verify"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_90"
+                android:textSize="@dimen/sp15" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

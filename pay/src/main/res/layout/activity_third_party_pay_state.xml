@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp255"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/base_white_button"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_tv_third_pay_state_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp29"
+            android:gravity="center_horizontal"
+            android:text="@string/touch_pay"
+            android:textColor="#FF333333"
+            android:textSize="@dimen/sp13" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_marginTop="@dimen/dp12"
+            android:background="#FFD9D9D9"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:divider="@drawable/middle_line_shape"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/id_btn_third_pay_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/pay_left_coner_bg"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="#FF333333"
+                android:textSize="@dimen/sp17" />
+
+            <TextView
+                android:id="@+id/id_btn_third_pay_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/pay_right_coner_bg"
+                android:gravity="center"
+                android:text="@string/inout_pass"
+                android:textAllCaps="false"
+                android:textColor="@color/color_0076FF"
+                android:textSize="@dimen/sp17"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

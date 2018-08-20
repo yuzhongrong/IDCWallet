@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp64"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_set_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp44"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp16"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_back_phrase"
+            android:textStyle="bold"
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/sp17" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp80"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp78"
+        android:src="@mipmap/icon_back_phrase"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_success_hint_txt"
+        android:textSize="@dimen/sp16"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp8"
+        android:textColor="@color/tip_gray_black"
+        android:layout_marginTop="@dimen/dp36"/>
+
+    <Button
+        android:id="@+id/btn_back_finish"
+        android:layout_width="@dimen/dp260"
+        android:layout_height="@dimen/dp40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp70"
+        android:background="@drawable/sw_ripple_btn_bg"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="@string/finish"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16" />
+</LinearLayout>

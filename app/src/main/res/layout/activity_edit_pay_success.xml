@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp64"
+        android:background="@color/tipper_blue_color"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_set_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp44"
+            android:paddingTop="@dimen/dp16"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/modify_pay_pass"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp17"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp80"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp60"
+        android:src="@mipmap/icon_back_phrase"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_modify_pass_success"
+        android:textSize="@dimen/sp15"
+        android:layout_gravity="center"
+        android:textColor="@color/tip_black"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp30"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp14"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/please_rem_new_pin"
+        android:textSize="@dimen/sp13"/>
+
+
+    <Button
+        android:id="@+id/btn_success_finish"
+        android:layout_width="@dimen/dp260"
+        android:layout_height="@dimen/dp40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp48"
+        android:background="@drawable/sw_tipper_blue_bg"
+        android:gravity="center"
+        android:text="@string/finish"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16" />
+</LinearLayout>

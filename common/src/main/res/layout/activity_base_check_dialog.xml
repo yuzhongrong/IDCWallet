@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp216"
+        android:layout_height="@dimen/dp196"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp16"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/tip_black"
+            android:text="@string/check_new_version_title"/>
+
+
+            <TextView
+                android:id="@+id/tv_activity_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp16"
+                android:gravity="center"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/tip_black"
+                android:text="@string/check_new_version_content"/>
+
+        <TextView
+            android:id="@+id/tv_activity_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/sw_tip_blue_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/update"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/tv_activity_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:padding="@dimen/dp2"
+            android:layout_marginTop="@dimen/dp16"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/tip_blue"
+            android:textSize="@dimen/sp14" />
+
+    </LinearLayout>
+
+</LinearLayout>

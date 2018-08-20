@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/pay_method_item_key_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/sp14"
+            tools:text="姓名" />
+
+        <EditText
+            android:id="@+id/pay_method_item_value_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginStart="@dimen/dp12"
+            android:layout_toLeftOf="@+id/pay_method_item_scan_ib"
+            android:layout_toRightOf="@+id/pay_method_item_key_tv"
+            android:layout_toStartOf="@+id/pay_method_item_scan_ib"
+            android:background="@null"
+            android:gravity="end|right|center_vertical"
+            android:hint="@string/str_otc_pay_input_account_name"
+            android:minHeight="@dimen/dp46"
+            android:paddingBottom="@dimen/dp4"
+            android:paddingTop="@dimen/dp4"
+            android:singleLine="true"
+            android:textColorHint="@color/c_FF999999"
+            android:textSize="@dimen/sp14"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageButton
+            android:id="@+id/pay_method_item_scan_ib"
+            android:layout_width="@dimen/dp26"
+            android:layout_height="@dimen/dp46"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp8"
+            android:layout_marginStart="@dimen/dp8"
+            android:background="@null"
+            android:src="@drawable/otc_scan_bank_card"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

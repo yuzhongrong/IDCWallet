@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/blue_main_title"/>
+
+    <!--<com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tl_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        tl:tl_indicator_color="@color/tipper_blue_color"
+        tl:tl_indicator_height="@dimen/dp2"
+        tl:tl_indicator_width="@dimen/dp48"
+        tl:tl_indicator_width_equal_title="true"
+        android:background="@color/c_page_bg"
+        tl:tl_indicator_style="BLOCK"
+        tl:tl_tab_padding="@dimen/dp22"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textsize="@dimen/sp14"
+        tl:tl_textSelectColor="@color/tipper_blue_color"
+        tl:tl_textUnselectColor="@color/color_333333"
+        />-->
+
+    <RelativeLayout
+        android:id="@+id/layout_trade_side"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_buy"
+            style="@style/text_14_2E406B"
+            android:layout_width="@dimen/dp170"
+            android:layout_height="@dimen/dp40"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_otc_transaction_rectangle"
+            android:text="@string/str_otc_buy"
+            />
+
+        <TextView
+            android:id="@+id/tv_sell"
+            style="@style/text_16_8191BB"
+            android:layout_width="@dimen/dp170"
+            android:layout_height="@dimen/dp40"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/str_otc_sell"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp12"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragmentviewpager"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include" />
+</LinearLayout>

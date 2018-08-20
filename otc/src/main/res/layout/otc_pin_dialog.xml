@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp346"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/otc_pin_input_pass_container_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/otc_pin_input_pass_close_ib"
+                android:layout_width="@dimen/dp48"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/ic_back_black" />
+
+            <TextView
+                android:id="@+id/otc_pin_input_pass_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="44dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/input_pin"
+                android:textColor="@color/tip_black"
+                android:textSize="@dimen/sp16" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_send_sure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_bar"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <View
+                android:id="@+id/view_start"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp32"
+                android:layout_marginRight="@dimen/dp32"
+                android:layout_marginTop="@dimen/dp22"
+                android:background="@color/gray_line_90" />
+
+            <RelativeLayout
+                android:id="@+id/ll_start"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp40"
+                android:layout_below="@+id/view_start"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:paddingLeft="@dimen/dp22"
+                android:paddingRight="@dimen/dp22">
+
+
+                <cn.com.epsoft.keyboard.basic.NewPasswordView
+                    android:id="@+id/otc_pin_input_pass_password_np"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    app:cipherEnable="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_start_two"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_below="@+id/ll_start"
+                android:layout_marginLeft="@dimen/dp32"
+                android:layout_marginRight="@dimen/dp32"
+                android:background="@color/gray_line_90" />
+
+
+        </LinearLayout>
+
+        <cn.com.epsoft.keyboard.basic.NewKeyBoard
+            android:id="@+id/otc_pin_input_pass_key_nb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp220"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible">
+
+        </cn.com.epsoft.keyboard.basic.NewKeyBoard>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:secondaryProgressTint="@color/colorPrimary"
+        android:visibility="gone"
+        tools:ignore="UnusedAttribute" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/otc_pin_input_result_container_cl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/otc_pin_input_result_text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp40"
+            android:drawablePadding="@dimen/dp20"
+            android:drawableTop="@drawable/otc_success_img"
+            android:text="支付方式编辑成功"
+            android:textColor="@color/c_FF2968B9"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/otc_pin_input_result_confirm_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginBottom="@dimen/dp50"
+            android:layout_marginEnd="@dimen/dp68"
+            android:layout_marginStart="@dimen/dp68"
+            android:background="@drawable/sw_rounded_btn_bg"
+            android:text="@string/pay_str_payment_add_success_btn"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

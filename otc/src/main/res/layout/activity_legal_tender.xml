@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f7f7f7"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/blue_main_title" />
+
+    <RelativeLayout
+        android:id="@+id/ll_select_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/dp12"
+            android:text="@string/str_otc_fr_currency"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp12" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp12"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_curr_and_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/img_select"
+                        android:layout_width="@dimen/dp28"
+                        android:layout_height="@dimen/dp28"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/dp4" />
+
+                    <TextView
+                        android:id="@+id/tv_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/img_right"
+                        android:text=""
+                        android:textColor="@color/tip_black"
+                        android:textSize="@dimen/sp12" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_select_curr_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/str_otc_select_currency"
+                    android:textColor="@color/tip_gray"
+                    android:textSize="@dimen/sp12" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_toRightOf="@+id/tv_right"
+                android:src="@mipmap/arrow_down" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_marginLeft="@dimen/dp12"
+        android:background="@color/d_dddddd" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/amount_method_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/sp12"
+            android:text="@string/str_otc_assener_amount"
+            android:textColor="@color/color_666666" />
+
+        <EditText
+            android:id="@+id/ed_amount_down_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginStart="@dimen/dp12"
+            android:layout_toLeftOf="@+id/tv_curr_type_one"
+            android:layout_toRightOf="@+id/amount_method_tv"
+            android:inputType="number"
+            android:background="@null"
+            android:singleLine="true"
+            android:gravity="right|center_vertical"
+            android:digits="0123456789"
+            android:hint="@string/str_otc_assener_input_amount"
+            android:paddingRight="@dimen/dp12"
+            android:textColorHint="@color/tip_gray"
+            android:textSize="@dimen/sp12"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/ed_up_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginStart="@dimen/dp12"
+            android:layout_toRightOf="@+id/amount_method_tv"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="@string/str_otc_assener_input_amount"
+            android:layout_toLeftOf="@+id/tv_curr_type_one"
+            android:paddingRight="@dimen/dp6"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="15"
+            android:textColor="@color/color_666666"
+            android:digits="0123456789"
+            android:textColorHint="@color/c_FF999999"
+            android:textSize="@dimen/sp12"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_curr_type_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:gravity="center"
+            android:paddingRight="@dimen/dp12"
+            android:text=""
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/sp12"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dp200"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp12"
+            android:gravity="center|right"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/btn_accept_save_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginRight="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp22"
+        android:background="@drawable/item_gray_black"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/str_otc_accept_save"
+        android:textAllCaps="false"
+        android:textColor="@color/gray_90"
+        android:textSize="@dimen/sp15" />
+</LinearLayout>

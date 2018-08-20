@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="@dimen/dp2"
+             android:layout_marginLeft="@dimen/dp12"
+             android:layout_marginRight="@dimen/dp12"
+             android:layout_marginTop="@dimen/dp5"
+             android:paddingBottom="@dimen/dp2"
+             android:background="@drawable/bg_otc_blue_shdow"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/pay_with_refrence_no"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/dp12"
+
+                />
+
+
+            <TextView
+                android:id="@+id/reference_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/dp12"
+                tools:text="203415"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:background="@color/color_d1d1d1"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/rl_select_pay_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            >
+
+            <ImageView
+                android:id="@+id/iv_type"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                tools:src="@drawable/otc_alipay_circle_icon"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp6"
+                android:textColor="@color/c_333333"
+                android:textSize="@dimen/sp14"
+                tools:text="你爸爸"/>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_marginLeft="@dimen/dp6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintRight_toLeftOf="@+id/iv_qr_code"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/paytype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:textColor="@color/c_333333"
+                        android:textSize="@dimen/dp10"
+                        tools:text="xx银行"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/c_7333333"
+                        android:textSize="@dimen/sp12"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        tools:text="956042190@qq.com"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_qr_code"
+                    android:layout_width="@dimen/dp21"
+                    android:layout_height="@dimen/dp21"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:src="@drawable/otc_qr_code"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintLeft_toRightOf="@+id/layout_account"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+            </android.support.constraint.ConstraintLayout>
+
+            <ImageButton
+                android:id="@+id/right_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:background="@mipmap/arrow_down"
+                android:visibility="visible"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

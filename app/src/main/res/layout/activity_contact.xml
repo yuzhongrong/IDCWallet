@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_set_title"/>
+
+    <ImageView
+        android:layout_width="@dimen/dp70"
+        android:layout_height="@dimen/dp88"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp32"
+        android:src="@mipmap/img_main_contact"/>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:textColor="@color/tip_gray"
+        android:layout_height="wrap_content"
+        android:text="版本号 2.1"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_about_us"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d242"
+        android:layout_marginTop="@dimen/dp20"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_user"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/tip_black"
+                android:text="@string/user_service"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center|right"
+                android:paddingRight="8dp"
+                android:textColor="@color/tip_black"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sp12"
+                android:text="support@idcw.io"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/d45"
+            android:background="@color/sw_arrow_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_hezuo"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/tip_black"
+                android:text="@string/shangwu"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center|right"
+                android:paddingRight="8dp"
+                android:textColor="@color/tip_black"
+                android:textSize="@dimen/sp12"
+                android:layout_gravity="center"
+                android:text="commerce@idcw.io"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/d45"
+            android:background="@color/sw_arrow_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_contact"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/tip_black"
+                android:text="@string/face_book"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center|right"
+                android:textColor="@color/tip_black"
+                android:paddingRight="8dp"
+                android:textSize="@dimen/sp12"
+                android:layout_gravity="center"
+                android:text="IDCWALLET"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/d45"
+            android:background="@color/sw_arrow_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_twitter"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/tip_black"
+                android:text="@string/twitter"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center|right"
+                android:paddingRight="8dp"
+                android:textSize="@dimen/sp12"
+                android:layout_gravity="center"
+                android:textColor="@color/tip_black"
+                android:text="IDC Wallet"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/d45"
+            android:background="@color/sw_arrow_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_dianbao"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/tip_black"
+                android:text="@string/dian_bao"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center|right"
+                android:paddingRight="8dp"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/tip_black"
+                android:layout_gravity="center"
+                android:text="IDC Wallet"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/d45"
+            android:background="@color/sw_arrow_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_qq"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/tip_black"
+                android:text="@string/qq_group"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center|right"
+                android:textColor="@color/tip_black"
+                android:paddingRight="8dp"
+                android:textSize="@dimen/sp12"
+                android:layout_gravity="center"
+                android:text="695458332"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/d45"
+            android:background="@color/sw_arrow_line"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/dp60"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="V2.1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/tip_black"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/tv_about_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/tip_gray"
+                android:textSize="@dimen/sp12" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

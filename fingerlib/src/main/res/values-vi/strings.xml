@@ -1,0 +1,15 @@
+<resources>
+    <!--<string name="app_name">FingerLibrary</string>-->
+    <string name="verify_error">Touch ID Kiểm tra lỗi</string>
+    <string name="verify_failed">Thử lại</string>
+    <string name="start_failed">Không khởi động được, thiết bị đã bị khóa tạm thời</string>
+    <string name="verify_error_text">Touch ID Không thể xác minh</string>
+    <string name="after_try">Touch ID Thường xuyên，Thử lại</string>
+    <string name="device_not_support">Thiết bị không hỗ trợ</string>
+    <string name="set_touch">Chưa được đặt Touch ID，Cài đặt Touch ID</string>
+    <string name="touch_pay">Touch ID</string>
+    <string name="touch_pay_less">Touch ID Xác minh mở khóa</string>
+    <string name="str_cancel">Hủy bỏ</string>
+    <string name="inout_pass">Nhập mật khẩu</string>
+    <string name="inout_pin">Đầu vào PIN</string>
+</resources>

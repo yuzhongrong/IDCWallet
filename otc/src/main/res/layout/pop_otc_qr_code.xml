@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:gravity="center"
+              android:background="@color/bg_pop"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/anim_view"
+        android:paddingTop="@dimen/dp15"
+        android:paddingBottom="@dimen/dp15"
+        android:layout_margin="@dimen/dp12"
+        android:background="@drawable/bg_dialog_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginRight="@dimen/dp10"
+                android:id="@+id/iv_close"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp5"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/pop_close" />
+
+        </RelativeLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imageView"
+            app:riv_corner_radius="5dp"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="@dimen/dp292"
+            android:layout_width="@dimen/dp239"
+            android:layout_height="wrap_content"
+            android:src="#D2D2D2"
+            />
+
+        <TextView
+            android:id="@+id/btn_confirm"
+            android:layout_marginTop="@dimen/dp25"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_width="@dimen/dp239"
+            android:layout_height="@dimen/dp35"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/sw_ripple_btn_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/str_otc_accept_save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp15"/>
+    </LinearLayout>
+</LinearLayout>

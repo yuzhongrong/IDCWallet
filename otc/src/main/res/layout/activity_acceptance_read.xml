@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/blue_main_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp46"
+            android:textSize="@dimen/sp14"
+            android:background="@color/white"
+            android:textColor="@color/tip_black"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/dp12"
+            android:text="@string/str_otc_accept_apply_assurer"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:background="@color/d_dddddd"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/tip_gray_black"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:padding="@dimen/dp12"
+            android:textSize="@dimen/sp12"
+            android:text="@string/str_otc_accept_apply_text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp46"
+            android:textSize="@dimen/sp14"
+            android:background="@color/white"
+            android:textColor="@color/tip_black"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/dp12"
+            android:text="@string/str_otc_accept_apply_assurer_task"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:background="@color/d_dddddd"/>
+
+        <TextView
+            android:id="@+id/tv_apply_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/tip_gray_black"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:padding="@dimen/dp12"
+            android:textSize="@dimen/sp12"
+            android:text="@string/str_otc_accept_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp12"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="@string/str_otc_accept_apply_assurer_msg"
+            android:layout_gravity="center"
+            android:textColor="@color/tip_gray"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_balance_rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp12"
+            android:layout_marginTop="@dimen/dp4"
+            android:textColor="@color/tip_blue"
+            android:text="@string/str_otc_balance_rules"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/btn_accept_apply_read"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp12"
+            android:layout_marginTop="@dimen/dp22"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginBottom="@dimen/dp32"
+            android:layout_gravity="center"
+            android:background="@drawable/item_gray_black"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/str_otc_accept_already_read"
+            android:textAllCaps="false"
+            android:textColor="@color/gray_90"
+            android:textSize="@dimen/sp16" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

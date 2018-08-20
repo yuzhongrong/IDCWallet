@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="app_name">二维码</string>-->
+    <string name="create_name">Nhập thông tin</string>
+    <string name="edit_name">Chỉnh sửa mã QR</string>
+    <!-- 二维码扫描 -->
+    <string name="extension_qrcode_scan_help_tips">"Vui lòng canh khung ngắm với mã QR để tự động quét."</string>
+    <string name="album_btn">Album ảnh</string>
+    <string name="light_on_btn">Đèn</string>
+    <string name="light_off_btn">Tắt đèn</string>
+    <string name="my_qrcode">Mã QR của tôi</string>
+    <string name="scan_tip">Vui lòng đặt mã QR vào khung quét</string>
+    <string name="scan_retry">Lỗi quét mã hai chiều, vui lòng quét lại</string>
+    <string name="scan_title">Quét</string>
+    <string name="scan_title_result">Quét kết quả</string>
+    <string name="QRCreate_noContent">Nội dung trống！</string>
+    <string name="save_to_picture">Lưu vào địa phương</string>
+    <string name="press_again_exit">Nhấn lần nữa để thoát...</string>
+
+    <!-- ssss -->
+    <string name="screenshot_saving_ticker" msgid="7403652894056693515">"Đang lưu mã QR..."</string>
+    <string name="screenshot_saving_title" msgid="8242282144535555697">"Đang lưu mã QR..."</string>
+    <string name="screenshot_saving_text" msgid="2419718443411738818">"Đang lưu mã QR."</string>
+    <string name="screenshot_saved_title" msgid="6461865960961414961">"Mã QR đã chụp."</string>
+    <string name="screenshot_saved_text" msgid="1152839647677558815">"Chạm để xem mã QR của bạn."</string>
+    <string name="screenshot_failed_title" msgid="705781116746922771">"Không thể chụp mã QR."</string>
+    <string name="screenshot_failed_text" msgid="8134011269572415402">"Không thể lưu mã QR. Thiết bị lưu trữ có thể đang được sử dụng."</string>
+    <string name="doing_sao">Đang quét...</string>
+    <string name="select_sao_picture">Chọn ảnh mã QR</string>
+    <string name="error_restart_select">Quét không thành công, vui lòng chọn lại！</string>
+    <string name="er_sao">Quét mã QR</string>
+    <string name="extension_qrcode_scan_help_tip_login">"Chỉ cho đăng nhập được phép, không quét địa chỉ đăng ký tiền mặt"</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="app_name">二维码</string>-->
+    <string name="create_name">Ingresa información</string>
+    <string name="edit_name">Editar código QR</string>
+    <!-- 二维码扫描 -->
+    <string name="extension_qrcode_scan_help_tips">"Alinee el visor con el código QR para escanear automáticamente."</string>
+    <string name="album_btn">Álbum de fotos</string>
+    <string name="light_on_btn">Luces</string>
+    <string name="light_off_btn">Apaga la luz</string>
+    <string name="my_qrcode">Mi código QR</string>
+    <string name="scan_tip">Coloque el código QR en el marco para escanear</string>
+    <string name="scan_retry">Error de escaneo de código bidimensional, vuelva a escanear</string>
+    <string name="scan_title">Barrer</string>
+    <string name="scan_title_result">Resultados de escaneo</string>
+    <string name="QRCreate_noContent">El contenido está vacío！</string>
+    <string name="save_to_picture">Guardar en local</string>
+    <string name="press_again_exit">Presione nuevamente para salir...</string>
+
+    <!-- ssss -->
+    <string name="screenshot_saving_ticker" msgid="7403652894056693515">"Guardando el código QR..."</string>
+    <string name="screenshot_saving_title" msgid="8242282144535555697">"Guardando el código QR..."</string>
+    <string name="screenshot_saving_text" msgid="2419718443411738818">"Guardando el código QR."</string>
+    <string name="screenshot_saved_title" msgid="6461865960961414961">"Código QR capturado。"</string>
+    <string name="screenshot_saved_text" msgid="1152839647677558815">"Toca para ver tu código QR。"</string>
+    <string name="screenshot_failed_title" msgid="705781116746922771">"No se puede capturar el código QR。"</string>
+    <string name="screenshot_failed_text" msgid="8134011269572415402">"No se puede guardar el código QR. El dispositivo de almacenamiento puede estar en uso."</string>
+    <string name="doing_sao">Escaneo...</string>
+    <string name="select_sao_picture">Seleccionar imagen de código QR</string>
+    <string name="error_restart_select">El escaneo falló, por favor seleccione de nuevo！</string>
+    <string name="er_sao">Escaneo de código QR</string>
+    <string name="extension_qrcode_scan_help_tip_login">"Solo para iniciar sesión autorizado, no escanee la dirección de la caja registradora"</string>
+</resources>

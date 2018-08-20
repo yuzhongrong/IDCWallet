@@ -1,0 +1,15 @@
+<resources>
+    <!--<string name="app_name">FingerLibrary</string>-->
+    <string name="verify_error">Touch ID Verify failed,Transfer payment</string>
+    <string name="verify_failed">Please try again</string>
+    <string name="start_failed">Start failed，Device temporarily locked</string>
+    <string name="verify_error_text">Touch ID Verify failed，Transfer payment</string>
+    <string name="after_try">Touch ID Verify is Too frequent，Please Wait try again,Transfer payment</string>
+    <string name="device_not_support">Your device does not support Touch ID</string>
+    <string name="set_touch">Touch ID not set，please set Touch ID</string>
+    <string name="touch_pay">Touch ID</string>
+    <string name="touch_pay_less">Verify Touch ID</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="inout_pass">Enter PIN</string>
+    <string name="inout_pin">Enter PIN</string>
+</resources>

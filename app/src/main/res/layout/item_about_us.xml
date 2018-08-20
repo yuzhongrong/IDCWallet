@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp36"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_about_us"
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp12"
+            android:src="@mipmap/icon_twitter" />
+
+        <TextView
+            android:id="@+id/tv_about_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_toRightOf="@+id/img_about_us"
+            android:text="@string/twitter"
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_about_us_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dp12"
+            android:text="@string/twitter"
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/sp12" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_marginLeft="@dimen/dp40"
+        android:background="@color/sw_arrow_line" />
+
+</LinearLayout>

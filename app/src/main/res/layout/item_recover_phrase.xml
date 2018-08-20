@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foxidcw.android.idcw.common.widget.IDCWInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    style="@style/TextInputLayoutWrapStyle"
+    android:id="@+id/ll_phrase"
+    android:layout_height="@dimen/dp44">
+
+    <EditText
+        android:id="@+id/text_recover_phrase"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp32"
+        style="@style/LoginEdit"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="textCapCharacters"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:hint="1"
+        android:textSize="@dimen/dp15"
+        android:text="" />
+
+</foxidcw.android.idcw.common.widget.IDCWInputLayout>

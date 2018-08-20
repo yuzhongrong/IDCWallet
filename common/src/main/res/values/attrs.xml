@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="myTextView">
+        <attr name="myTextStr" format="string" />
+    </declare-styleable>
+    <declare-styleable name="VerifyCodeViewStyle">
+        <!--输入框的数量-->
+        <attr name="verify_code_num" format="integer" />
+        <!--单个验证码的宽度-->
+        <attr name="verify_code_h_space" format="dimension|reference" />
+        <!--输入框文字颜色-->
+        <attr name="verify_code_text_color" format="color|reference" />
+        <!--输入框文字大小-->
+        <attr name="verify_code_text_size" format="dimension|reference" />
+        <!--输入框获取焦点时边框-->
+        <attr name="verify_code_bg_inputed" format="reference" />
+        <!--输入框没有焦点时边框-->
+        <attr name="verify_code_bg_none" format="reference" />
+        <!--光标样式-->
+        <attr name="verify_et_cursor" format="integer" />
+        <!--输入框的宽度-->
+        <attr name="verify_code_height" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="IDCMInputLayout">
+        <attr name="textClearable" format="boolean"/>
+        <attr name="passwordToggleEnable" format="boolean"/>
+        <attr name="errorEnable" format="boolean"/>
+        <attr name="errorColor" format="color"/>
+    </declare-styleable>
+</resources>

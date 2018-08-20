@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp12"
+            android:background="@drawable/bg_otc_transaction_rectangle"
+            android:orientation="vertical"
+            >
+            <!--卖出币种-->
+            <RelativeLayout
+                android:id="@+id/rl_choice_buy_coin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:paddingLeft="@dimen/dp12"
+                android:paddingRight="@dimen/dp12"
+                >
+
+                <TextView
+                    style="@style/text_12_666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_otc_sell_type"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/img_buy_coin"
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp4"
+                    android:layout_toLeftOf="@+id/tv_buy_coin_type"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_buy_coin_type"
+                    style="@style/text_12_c_333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp6"
+                    android:layout_toLeftOf="@+id/img_choice_coin"
+                    android:hint="@string/str_otc_sell_type_hint"
+                    android:textColorHint="@color/color_999999"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_choice_coin"
+                    android:layout_width="@dimen/dp7"
+                    android:layout_height="@dimen/dp4"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/icon_otc_down_arrow"
+                    />
+
+            </RelativeLayout>
+
+            <include layout="@layout/view_otc_1_dddddd"/>
+
+            <!--卖出数量-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="@dimen/dp12"
+                android:paddingRight="@dimen/dp12"
+                >
+
+                <TextView
+                    style="@style/text_12_666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_otc_sell_num"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    >
+
+                    <EditText
+                        android:id="@+id/et_coin_num"
+                        style="@style/text_12_c_333333"
+                        android:layout_width="@dimen/dp200"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="right|center_vertical"
+                        android:hint="@string/str_otc_enter_num"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/color_999999"
+                        android:textCursorDrawable="@null"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_coin_symbol"
+                        style="@style/text_12_c_333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp6"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/view_otc_1_dddddd"/>
+            <!--支付法币-->
+            <RelativeLayout
+                android:id="@+id/rl_choice_sell_coin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:paddingLeft="@dimen/dp12"
+                android:paddingRight="@dimen/dp12"
+                >
+
+                <TextView
+                    style="@style/text_12_666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_otc_sell_pay_type"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/img_buy_pay_coin"
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp4"
+                    android:layout_toLeftOf="@+id/tv_buy_pay_coin_type"/>
+
+                <TextView
+                    android:id="@+id/tv_buy_pay_coin_type"
+                    style="@style/text_12_c_333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp6"
+                    android:layout_toLeftOf="@+id/img_buy_pay_choice_coin"
+                    android:hint="@string/str_otc_sell_pay_type_hint"
+                    android:textColorHint="@color/color_999999"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_buy_pay_choice_coin"
+                    android:layout_width="@dimen/dp7"
+                    android:layout_height="@dimen/dp4"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/icon_otc_down_arrow"
+                    />
+
+            </RelativeLayout>
+
+            <include layout="@layout/view_otc_1_dddddd"/>
+
+            <!--支付方式-->
+            <RelativeLayout
+                android:id="@+id/rl_pay_way"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:paddingLeft="@dimen/dp12"
+                android:paddingRight="@dimen/dp12"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp41">
+
+                    <TextView
+                        style="@style/text_12_666666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_otc_sell_pay_way"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_buy_pay_way"
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp4"
+                        android:layout_toLeftOf="@+id/tv_buy_pay_coin_way"/>
+
+                    <TextView
+                        android:id="@+id/tv_buy_pay_coin_way"
+                        style="@style/text_12_c_333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp6"
+                        android:layout_toLeftOf="@+id/img_buy_pay_choice_coin_way"
+                        android:hint="@string/str_otc_sell_pay_way_hint"
+                        android:textColorHint="@color/color_999999"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_buy_pay_choice_coin_way"
+                        android:layout_width="@dimen/dp7"
+                        android:layout_height="@dimen/dp4"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/icon_otc_down_arrow"
+                        />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp12"
+            >
+
+
+            <CheckBox
+                android:id="@+id/cbx_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_otc_checkbox_transcation_rule"
+                android:gravity="center"
+                android:paddingRight="@dimen/dp5"
+                android:paddingTop="@dimen/dp2"
+                android:paddingBottom="@dimen/dp2"
+                />
+
+            <TextView
+                android:id="@+id/tv_agree_buy"
+                style="@style/text_12_999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/cbx_buy"
+                android:text="@string/str_otc_buy_read_agree"
+                />
+
+            <TextView
+                android:id="@+id/tv_buy_rule"
+                style="@style/text_12_2968B9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp6"
+                android:layout_toRightOf="@+id/tv_agree_buy"
+                android:text="@string/str_otc_buy_rule"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_buy_order"
+            style="@style/text_16_ffffff_50"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginBottom="@dimen/dp16"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp12"
+            android:layout_marginTop="@dimen/dp14"
+            android:background="@drawable/shape_solid_corner_999fa5_4"
+            android:gravity="center"
+            android:text="@string/str_otc_selling"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp4"
+            android:background="@color/c_F7F7F7"/>
+    </LinearLayout>
+
+</FrameLayout>

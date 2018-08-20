@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/tian_tip_blue">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/dp0.5" android:color="@color/tian_tip_blue"/>
+            <solid android:color="@color/gray_90"/>
+            <corners android:radius="@dimen/dp2"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/sw_tian_blue"/>
+</ripple>

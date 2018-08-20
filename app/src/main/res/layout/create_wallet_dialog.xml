@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/tip_black"
+            android:layout_marginTop="@dimen/dp30"
+            android:textSize="@dimen/sp13"
+            android:text="@string/back_up_text"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/dp16"
+            android:textSize="@dimen/sp12"
+            android:textColor="@color/main_color"
+            android:text="@string/back_up_hint"/>
+
+        <TextView
+            android:id="@+id/btn_back_up"
+            android:layout_width="@dimen/dp239"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/sw_tipper_blue_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/back_up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <TextView
+            android:id="@+id/tv_next_say"
+            android:layout_width="@dimen/dp239"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp10"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/tv_next_say"
+            android:layout_marginBottom="@dimen/dp17"
+            android:textAllCaps="false"
+            android:textColor="@color/tipper_blue_color"
+            android:textSize="@dimen/dp15" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,218 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.mob.sdk'
+def config = rootProject.ext.android //配置
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+    defaultConfig {
+        applicationId "com.idcg.idcw"
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+
+        multiDexEnabled true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+
+    signingConfigs {
+        sign {
+            //TODO 发布版必须将项目内的keystore文件删除并将值改为外部引用值
+            /**
+             *  storeFile file('引用外部资源文件')
+             *  storePassword '读取外部文件值'
+             *  keyAlias '读取外部文件值'
+             *  keyPassword '读取外部文件值'
+             * */
+            storeFile file("idcw_new.jks")
+            storePassword "123456789"
+            keyAlias "idcw_new"
+            keyPassword "123456789"
+            v2SigningEnabled false
+        }
+    }
+
+    sourceSets{
+        main.assets.srcDirs = ['src/main/assets']
+        //debug版本将单独拥有assets-debug-extra下的文件
+        debug.assets.srcDirs = ['src/main/assets','src/main/assets-debug-extra']
+    }
+
+    buildTypes {//调用签名的方法
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.sign
+
+        }
+
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.sign
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //压缩对齐生成的apk包
+            zipAlignEnabled true
+            //启用multidex的支持
+            shrinkResources true
+            //设置release版本只包含armeabi-v7a的so包
+            ndk {
+                abiFilters "armeabi-v7a"
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    dexOptions {
+        //使用增量模式构建 3.0 之后已经取消
+        //incremental true
+        //最大堆内存
+        javaMaxHeapSize "8g"
+        //是否支持大工程模式
+        jumboMode = true
+        //预编译
+        preDexLibraries = true
+        //线程数
+        threadCount = 8
+    }
+
+    packagingOptions {
+        exclude 'lib/mips64/*.so'
+        exclude 'lib/mips/*.so'
+    }
+
+}
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
+    compile('com.alibaba.android:ultraviewpager:1.0.7.7@aar') {
+        transitive = true
+    }
+    implementation project(':fingerlib')
+    implementation project(':keyboard')
+    implementation project(':qrcode')
+    implementation project(':common')
+    implementation project(':pay')
+    implementation project(':otc')
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+}
+
+
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '26.0.2'
+            }
+        }
+    }
+}
+
+MobSDK {
+    appKey "26ef147de7841"
+    appSecret "2e3e90db46274df4cd71041046ff0d77"
+
+    ShareSDK {
+        //平台配置信息
+        devInfo {
+            SinaWeibo {
+                //需要正式APPKEY ，下面只是测试appkey
+                appKey "465191353"
+                appSecret "d81d7f134ecc9fa3fb4bdc3855a716e5"
+                shareByAppClient true
+
+
+            }
+            Wechat {
+                //已经是正式的appkey
+                appId "wxbebcba3ae543417b"
+                appSecret "2501ef09306e7f081c86f23dbb84141f"
+                shareByAppClient true
+
+
+
+            }
+
+            WechatMoments{
+                //已经是正式的appkey
+                appId "wxbebcba3ae543417b"
+                appSecret "2501ef09306e7f081c86f23dbb84141f"
+                shareByAppClient true
+
+            }
+            QQ {
+                //已经是正式的appkey
+                appId "1106940960"
+                appKey "O19yKoEX1zwCGHeD"
+                shareByAppClient true
+            }
+            QZone{
+
+                //已经是正式的appkey
+                appId "1106940960"
+                appKey "O19yKoEX1zwCGHeD"
+                shareByAppClient true
+            }
+            Facebook {
+                //已是正式APPKEY ，
+                appKey "229787877850964"
+                appSecret "4c03f6fa3ab4e7567ff136f23a7dc5b3"
+                callbackUri "https://www.idcw.io"
+                shareByAppClient true
+            }
+            Twitter {
+                //已是正式APPKEY ，
+                appKey "UK3APmVl9nRjM9OhSQHVQnek9"
+                appSecret "tAK4WjUXXnFkioCuLwwUyxKEimOFHVqaotKsROvfrPjt7VyylU"
+                callbackUri "https://www.idcw.io"
+                shareByAppClient true
+                enable true
+            }
+
+            Telegram{
+                //随便即可
+                appId "101479873"
+                appKey "947fed8bce7a7b0f46fb6b4d3c88737e"
+                callbackUri "https://www.idcw.io"
+                shareByAppClient true
+            }
+
+        }
+    }
+
+}
+
+
+
+
+

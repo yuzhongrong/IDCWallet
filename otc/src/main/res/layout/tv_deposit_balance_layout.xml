@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/btn_get_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginRight="@dimen/dp12"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp22"
+        android:background="@drawable/sw_ripple_btn_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/str_otc_get_deposit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp16" />
+</LinearLayout>

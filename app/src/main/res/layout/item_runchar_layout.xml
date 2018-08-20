@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp50"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_runchar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp49"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/dp33"
+            android:layout_height="@dimen/dp33"
+            android:layout_marginStart="@dimen/dp15"
+            android:layout_marginLeft="@dimen/dp15" />
+        <TextView
+            android:id="@+id/btype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp12"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_toRightOf="@+id/icon"
+            android:text="总资产"
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/dp15"
+            android:layout_marginLeft="@dimen/dp12" />
+
+        <CheckBox
+            android:id="@+id/checkboxone"
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp168"
+            android:checked="false"
+            android:layout_marginTop="@dimen/dp11"
+            android:background="@drawable/select_checkbox"
+            android:button="@null"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp168" />
+
+        <CheckBox
+            android:id="@+id/runcheckboxtwo"
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:layout_alignParentEnd="true"
+            android:checked="false"
+            android:layout_marginEnd="@dimen/dp55"
+            android:layout_marginTop="@dimen/dp11"
+            android:visibility="invisible"
+            android:background="@drawable/select_checkbox"
+            android:button="@null"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp55" />
+    </RelativeLayout>
+
+    <View style="@style/line"
+        android:id="@+id/view_diver"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_below="@+id/rl_runchar"/>
+</RelativeLayout>

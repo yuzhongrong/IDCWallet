@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp46">
+
+        <TextView
+            android:id="@+id/pay_method_bank_card_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/str_otc_pay_account_bank_card"
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp1"
+            android:layout_marginStart="@dimen/dp1"
+            android:layout_toEndOf="@+id/pay_method_bank_card_tv"
+            android:layout_toRightOf="@+id/pay_method_bank_card_tv"
+            android:text="@string/str_otc_pay_account_only_card_info"
+            android:textColor="@color/c_FF999999"
+            android:textSize="@dimen/sp14" />
+    </RelativeLayout>
+</FrameLayout>

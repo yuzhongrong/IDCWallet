@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tool="http://schemas.android.com/tools"
+              android:gravity="center"
+              android:background="@color/bg_pop"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:padding="@dimen/dp15"
+        android:layout_margin="@dimen/dp12"
+        android:background="@drawable/bg_dialog_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_close"
+            android:padding="@dimen/dp5"
+            android:layout_width="@dimen/dp23"
+            android:layout_height="@dimen/dp23"
+            android:layout_gravity="right"
+            android:src="@drawable/pop_close" />
+
+        <ImageView
+            android:id="@+id/tv_title"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_swap_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp23"/>
+        <TextView
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_marginBottom="@dimen/dp18"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp22"
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tip_black"
+            tool:text="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+            android:textSize="@dimen/sp14" />
+    </RelativeLayout>
+</LinearLayout>

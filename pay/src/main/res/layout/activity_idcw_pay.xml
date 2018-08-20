@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp216"
+            android:background="#30394F">
+
+            <ImageView
+                android:layout_width="@dimen/dp132"
+                android:layout_height="@dimen/dp86"
+                android:layout_centerInParent="true"
+                android:src="@drawable/common_icon_idcw_top_logo" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48">
+
+                <LinearLayout
+                    android:id="@+id/id_ll_ac_idcw_pay_close"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/common_icon_close_gray" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sure_send_txt"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="#dddddd" />
+
+            <TextView
+                android:id="@+id/tv_currency_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp16"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="@dimen/sp18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp28"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:text="@string/pay_str_receiver"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/tv_accept_addr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp32"
+                    android:layout_marginStart="@dimen/dp32"
+                    android:gravity="center|right"
+                    android:paddingRight="@dimen/dp12"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="#dddddd" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp42"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginRight="@dimen/dp12"
+        android:background="@drawable/common_bg_2e406b_6"
+        android:gravity="center"
+        android:text="@string/sure_send_txt"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp14" />
+</RelativeLayout>
+

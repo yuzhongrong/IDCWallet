@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_pop"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp12"
+        android:background="@drawable/bg_dialog_select"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp20">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp56"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/popup_select_payment_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16"
+                tools:text="选择承兑币种" />
+
+            <ImageView
+                android:id="@+id/popup_select_payment_close_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:padding="@dimen/dp5"
+                android:src="@mipmap/pop_close" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/popup_select_payment_items_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:overScrollMode="ifContentScrolls"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/popup_select_payment_confirm_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/dp56"
+            android:layout_marginLeft="@dimen/dp56"
+            android:layout_marginStart="@dimen/dp56"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/otc_add_pay_method_btn_bg_selector"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/tv_sure"
+            android:textAllCaps="false"
+            android:textColor="@color/otc_add_pay_method_btn_color_selector"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+</LinearLayout>

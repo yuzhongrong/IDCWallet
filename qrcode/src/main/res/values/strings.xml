@@ -1,0 +1,33 @@
+<resources>
+    <!--<string name="app_name">二维码</string>-->
+    <string name="create_name">输入信息</string>
+    <string name="edit_name">编辑二维码</string>
+    <!-- 二维码扫描 -->
+    <string name="extension_qrcode_scan_help_tips">"请将取景框对准二维码，即可自动扫描。"</string>
+    <string name="album_btn">相册</string>
+    <string name="light_on_btn">开灯</string>
+    <string name="light_off_btn">关灯</string>
+    <string name="my_qrcode">我的二维码</string>
+    <string name="scan_tip">请将二维码置于取景框内扫描</string>
+    <string name="scan_retry">二维码扫描出错啦,请重新扫描</string>
+    <string name="scan_title">扫一扫</string>
+    <string name="scan_title_result">扫一扫结果</string>
+    <string name="QRCreate_noContent">内容为空噢！</string>
+    <string name="save_to_picture">保存到本地</string>
+    <string name="press_again_exit">再按一次退出...</string>
+
+    <!-- ssss -->
+    <string name="screenshot_saving_ticker" msgid="7403652894056693515">"正在保存二维码..."</string>
+    <string name="screenshot_saving_title" msgid="8242282144535555697">"正在保存二维码..."</string>
+    <string name="screenshot_saving_text" msgid="2419718443411738818">"正在保存二维码。"</string>
+    <string name="screenshot_saved_title" msgid="6461865960961414961">"已捕获二维码。"</string>
+    <string name="screenshot_saved_text" msgid="1152839647677558815">"触摸可查看您的二维码。"</string>
+    <string name="screenshot_failed_title" msgid="705781116746922771">"无法捕获二维码。"</string>
+    <string name="screenshot_failed_text" msgid="8134011269572415402">"无法保存二维码。存储设备可能正在使用中。"</string>
+    <string name="doing_sao">正在扫描...</string>
+    <string name="select_sao_picture">选择二维码图片</string>
+    <string name="error_restart_select">扫描失败，请重新选择！</string>
+    <string name="er_sao">二维码</string>
+    <string name="extension_qrcode_scan_help_tip_login">"仅用于授权登录，请勿扫描收币地址"</string>
+
+</resources>

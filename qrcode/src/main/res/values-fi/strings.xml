@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="app_name">二維碼</string>-->
+    <string name="create_name">輸入信息</string>
+    <string name="edit_name">編輯二維碼</string>
+    <!-- 二维码扫描 -->
+    <string name="extension_qrcode_scan_help_tips">"請將取景框對准二維碼，即可自動掃描"</string>
+    <string name="album_btn">相册</string>
+    <string name="light_on_btn">開燈</string>
+    <string name="light_off_btn">關燈</string>
+    <string name="my_qrcode">我的二維碼</string>
+    <string name="scan_tip">請將二維碼置于取景框內掃描</string>
+    <string name="scan_retry">二維碼掃描出錯啦,請重新掃描</string>
+    <string name="scan_title">掃一掃</string>
+    <string name="scan_title_result">掃一掃結果</string>
+    <string name="QRCreate_noContent">內容爲空！</string>
+    <string name="save_to_picture">保存到本地</string>
+    <string name="press_again_exit">再按一次退出.</string>
+
+    <!-- ssss -->
+    <string name="screenshot_saving_ticker" msgid="7403652894056693515">"正在保存二維碼."</string>
+    <string name="screenshot_saving_title" msgid="8242282144535555697">"正在保存二維碼."</string>
+    <string name="screenshot_saving_text" msgid="2419718443411738818">"正在保存二維碼."</string>
+    <string name="screenshot_saved_title" msgid="6461865960961414961">"已捕獲二維碼。"</string>
+    <string name="screenshot_saved_text" msgid="1152839647677558815">"觸摸可查看您的二維碼。"</string>
+    <string name="screenshot_failed_title" msgid="705781116746922771">"無法捕獲二維碼。"</string>
+    <string name="screenshot_failed_text" msgid="8134011269572415402">"無法保存二維碼。存儲設備可能正在使用中"</string>
+    <string name="doing_sao">正在掃描...</string>
+    <string name="select_sao_picture">選擇二維碼圖片</string>
+    <string name="error_restart_select">掃描失敗，請重新選擇！</string>
+    <string name="er_sao">二維碼</string>
+    <string name="extension_qrcode_scan_help_tip_login">"僅用於授權登錄，請勿掃描收幣地址"</string>
+</resources>

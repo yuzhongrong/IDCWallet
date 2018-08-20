@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:background="@color/white"
+        android:text="@string/str_otc_assener_hint"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/sp12"
+        android:textColor="@color/tip_gray"/>
+</LinearLayout>

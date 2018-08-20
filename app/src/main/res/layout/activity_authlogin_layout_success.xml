@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_page"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/gif_bg"
+        android:layout_width="@dimen/dp135"
+        android:layout_height="@dimen/dp100"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp108"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/icon_auth_login"/>
+    
+    <TextView
+        android:id="@+id/login_tip"
+        android:layout_below="@+id/gif_bg"
+        android:layout_width="@dimen/dp172"
+        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/dp22"
+        android:layout_marginTop="@dimen/dp40"
+        android:src="@mipmap/icon_text_logo"
+        android:textSize="@dimen/sp14"
+        android:textColor="@color/c_333333"
+        android:text="@string/tv_login_pc"
+        android:gravity="center"
+        />
+
+
+    <TextView
+        android:id="@+id/san_waring"
+        android:layout_below="@+id/login_tip"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/dp22"
+        android:layout_marginTop="@dimen/dp10"
+        android:textSize="@dimen/sp14"
+        android:textColor="#FC8968"
+        android:text="@string/str_code_faile"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <Button
+                android:id="@+id/rescan"
+                android:layout_width="220dp"
+                android:layout_height="@dimen/dp40"
+                android:layout_gravity="center"
+                android:background="@drawable/sw_ripple_btn_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/str_scan_rescan"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp16"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="220dp"
+                android:layout_height="@dimen/dp40"
+                android:layout_gravity="center"
+                android:background="@drawable/sw_ripple_btn_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/login_new"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp16" />
+
+        </FrameLayout>
+
+
+
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp40"
+            android:layout_gravity="center"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/sw_ripple_blue"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="@string/cancel"
+            android:textColor="@color/tipper_blue_color"
+            android:textSize="@dimen/dp16" />
+    </LinearLayout>
+
+
+</RelativeLayout>

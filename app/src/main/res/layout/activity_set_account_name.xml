@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/blue_main_title" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dp290"
+        android:layout_height="@dimen/dp20"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp50"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_user_set" />
+
+        <com.idcg.idcw.widget.InPutEditText
+            android:id="@+id/id_et_ac_account_set_name_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/hint_register_wallet_name"
+            android:inputType="text"
+            android:maxLength="16"
+            android:paddingRight="@dimen/dp18"
+            android:textColor="@color/tip_black"
+            android:textColorHint="@color/white_gray"
+            android:textSize="@dimen/sp14"
+            android:paddingEnd="@dimen/dp18"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp290"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp6"
+        android:background="@color/sw_arrow_bg" />
+
+    <Button
+        android:id="@+id/id_btn_ac_set_account_name_submit"
+        android:layout_width="@dimen/dp290"
+        android:layout_height="@dimen/dp40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp45"
+        android:background="@drawable/btn_enable_state_selector"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/commit"
+        android:textAllCaps="false"
+        android:textColor="@color/gray_90"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

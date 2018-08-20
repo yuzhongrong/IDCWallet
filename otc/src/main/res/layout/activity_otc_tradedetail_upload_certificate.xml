@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+              android:layout_marginTop="@dimen/dp10"
+              android:layout_marginLeft="@dimen/dp12"
+              android:layout_marginRight="@dimen/dp12"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recycler_view"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+    <ImageView
+        android:id="@+id/iv_add_cert"
+        android:src="@drawable/otc_add_cert_selector"
+        android:layout_width="@dimen/dp56"
+        android:layout_height="@dimen/dp56"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/layout_cert_container"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp56"/>
+
+    <TextView
+        android:id="@+id/tv_upload"
+        android:layout_marginLeft="@dimen/dp20"
+        android:text="@string/otc_upload"
+        android:gravity="center"
+        android:textColor="@color/selector_sw_btn_tx_color"
+        android:textSize="@dimen/sp14"
+        android:background="@drawable/selector_sw_ripple_btn"
+        android:layout_width="@dimen/dp56"
+        android:layout_height="@dimen/dp56"/>
+
+</LinearLayout>

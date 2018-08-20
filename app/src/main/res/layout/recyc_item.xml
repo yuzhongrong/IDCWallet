@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/rl_recycler"
+    android:layout_width="@dimen/dp60"
+    android:paddingLeft="@dimen/dp12"
+    android:paddingRight="@dimen/dp12"
+    android:layout_height="@dimen/dp100">
+
+    <RelativeLayout
+        android:id="@+id/item_rootviw"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60">
+
+
+        <ImageView
+            android:id="@+id/loop_img"
+            android:layout_width="@dimen/dp36"
+            android:layout_height="@dimen/dp36"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp8"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/loop_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp60"
+        android:paddingBottom="@dimen/dp3"
+        android:paddingTop="@dimen/dp3"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp14" />
+
+    <ImageView
+        android:id="@+id/trade_d_line"
+        android:layout_width="@dimen/dp29"
+        android:layout_height="@dimen/dp2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp83"
+        android:src="@drawable/ico_trade_d_line" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7">
+
+    <include layout="@layout/blue_main_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp120"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:text="@string/str_otc_accept_apply"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/tip_black"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/dp12"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:background="@color/d_dddddd"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/str_otc_accept_apply_content"
+            android:textColor="@color/tip_gray_black"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:textSize="@dimen/sp12"
+            android:paddingLeft="@dimen/dp12"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_accept_apply"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginRight="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp18"
+        android:layout_height="@dimen/dp40"
+        android:layout_gravity="center"
+        android:background="@drawable/sw_ripple_btn_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/str_otc_accept_apply_btn"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp16" />
+
+    <TextView
+        android:id="@+id/btn_test"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginRight="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp18"
+        android:layout_height="@dimen/dp40"
+        android:layout_gravity="center"
+        android:background="@drawable/sw_ripple_btn_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="测试保证金"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp16" />
+</LinearLayout>

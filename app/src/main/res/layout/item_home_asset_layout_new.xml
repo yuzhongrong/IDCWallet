@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp12"
+    android:paddingRight="@dimen/dp12"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <FrameLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_otc_blue_shdow"
+        android:layout_height="@dimen/dp145">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="19dp"
+                android:visibility="gone"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_assets_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:background="@drawable/item_tipper_layout"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/tv_assets_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text=""
+                        android:textColor="@color/tip_black"
+                        android:textSize="10sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="@dimen/dp6"
+                            android:paddingLeft="8dp"
+                            android:textColor="@color/tipper_blue_color"
+                            android:text="●"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/dp2"
+                            android:gravity="center|left"
+                            android:textColor="@color/tip_black"
+                            android:text="@string/assets"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_assets_money_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center|left"
+                            android:paddingLeft="6dp"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:paddingRight="8dp"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_assets_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/item_tipper_layout"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/tv_assets_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:textColor="@color/tip_black"
+                        android:text=""
+                        android:textSize="10sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="@dimen/dp6"
+                            android:paddingLeft="8dp"
+                            android:textColor="@color/tipper_blue_color"
+                            android:text="●"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/dp2"
+                            android:gravity="center|left"
+                            android:textColor="@color/tip_black"
+                            android:text="@string/assets"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_assets_money_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center|left"
+                            android:paddingLeft="6dp"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:paddingRight="8dp"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_assets_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/item_tipper_layout"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/tv_assets_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textColor="@color/tip_black"
+                        android:paddingLeft="8dp"
+                        android:text=""
+                        android:textSize="10sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="@dimen/dp6"
+                            android:paddingLeft="8dp"
+                            android:textColor="@color/tipper_blue_color"
+                            android:text="●"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/dp2"
+                            android:gravity="center|left"
+                            android:textColor="@color/tip_black"
+                            android:text="@string/assets"
+                            android:textSize="10sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_assets_money_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center|left"
+                            android:paddingLeft="6dp"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:paddingRight="8dp"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_assets_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/item_tipper_layout"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/tv_assets_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/tip_black"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text=""
+                        android:textSize="10sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="@dimen/dp6"
+                            android:paddingLeft="8dp"
+                            android:textColor="@color/tipper_blue_color"
+                            android:text="●"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/dp2"
+                            android:gravity="center|left"
+                            android:textColor="@color/tip_black"
+                            android:text="@string/assets"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_assets_money_four"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center|left"
+                            android:paddingLeft="6dp"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:paddingRight="8dp"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_assets_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="56dp"
+                    android:background="@drawable/item_tipper_layout"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/tv_assets_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:textColor="@color/tip_black"
+                        android:text=""
+                        android:textSize="10sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="@dimen/dp6"
+                            android:paddingLeft="8dp"
+                            android:textColor="@color/tipper_blue_color"
+                            android:text="●"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/dp2"
+                            android:gravity="center|left"
+                            android:textColor="@color/tip_black"
+                            android:text="@string/assets"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_assets_money_five"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center|left"
+                            android:paddingLeft="6dp"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:paddingRight="8dp"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_assets_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/item_tipper_layout"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/tv_assets_six"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textColor="@color/tip_black"
+                        android:paddingLeft="8dp"
+                        android:text=""
+                        android:textSize="10sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="@dimen/dp6"
+                            android:paddingLeft="8dp"
+                            android:textColor="@color/tipper_blue_color"
+                            android:text="●"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/dp2"
+                            android:gravity="center|left"
+                            android:textColor="@color/tip_black"
+                            android:text="@string/assets"
+                            android:textSize="10sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_assets_money_six"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center|left"
+                            android:paddingLeft="6dp"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:paddingRight="8dp"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_assets_seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/item_tipper_layout"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/tv_assets_seven"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/tip_black"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text=""
+                        android:textSize="10sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="@dimen/dp6"
+                            android:paddingLeft="8dp"
+                            android:textColor="@color/tipper_blue_color"
+                            android:text="●"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/dp2"
+                            android:gravity="center|left"
+                            android:textColor="@color/tip_black"
+                            android:text="@string/assets"
+                            android:textSize="10sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_assets_money_seven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center|left"
+                            android:paddingLeft="6dp"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:paddingRight="8dp"
+                            android:textSize="10sp"  />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+
+                >
+
+                <ImageView
+                    android:id="@+id/img_one"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/img_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+
+                <ImageView
+                    android:id="@+id/img_three"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/img_four"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/img_five"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/img_six"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/img_seven"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_seven_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp8"
+            android:text="@string/seven_day_trend"
+            android:textColor="@color/tipper_blue_color"
+            android:textSize="@dimen/sp10" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/dp10">
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center" />
+
+
+
+
+        </FrameLayout>
+        <View
+            android:id="@+id/view_assets"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/dp20"
+            android:background="#DDDDDD"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp28"
+            android:layout_gravity="bottom"
+            android:clickable="false"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/tv_day_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="false"
+                android:textColor="#BBC2CA"
+                android:text=""
+                android:textSize="@dimen/sp10" />
+
+            <View
+                android:layout_width="@dimen/dp1"
+                android:layout_height="@dimen/dp8"
+                android:layout_marginTop="0.5dp"
+                android:background="#DDDDDD"/>
+
+            <TextView
+                android:id="@+id/tv_day_two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:layout_weight="1"
+                android:textColor="#BBC2CA"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/sp10" />
+            <View
+                android:layout_width="@dimen/dp1"
+                android:layout_height="@dimen/dp8"
+                android:layout_marginTop="0.5dp"
+                android:background="#DDDDDD"/>
+            <TextView
+                android:id="@+id/tv_day_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:textColor="#BBC2CA"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/sp10" />
+            <View
+                android:layout_width="@dimen/dp1"
+                android:layout_height="@dimen/dp8"
+                android:layout_marginTop="0.5dp"
+                android:background="#DDDDDD"/>
+            <TextView
+                android:id="@+id/tv_day_four"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:textColor="#BBC2CA"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/sp10" />
+            <View
+                android:layout_width="@dimen/dp1"
+                android:layout_height="@dimen/dp8"
+                android:layout_marginTop="0.5dp"
+                android:background="#DDDDDD"/>
+            <TextView
+                android:id="@+id/tv_day_five"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:layout_gravity="center"
+                android:textColor="#BBC2CA"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/sp10" />
+            <View
+                android:layout_width="@dimen/dp1"
+                android:layout_height="@dimen/dp8"
+                android:layout_marginTop="0.5dp"
+                android:background="#DDDDDD"/>
+            <TextView
+                android:id="@+id/tv_day_six"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="#BBC2CA"
+                android:clickable="false"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/sp10" />
+            <View
+                android:layout_width="@dimen/dp1"
+                android:layout_height="@dimen/dp8"
+                android:layout_marginTop="0.5dp"
+                android:background="#DDDDDD"/>
+            <TextView
+                android:id="@+id/tv_day_seven"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="#BBC2CA"
+                android:clickable="false"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/sp10" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

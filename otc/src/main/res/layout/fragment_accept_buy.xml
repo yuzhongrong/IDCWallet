@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <foxidcw.android.idcw.otc.widgets.widget.OTCJimPullBottomView
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp12"
+            android:descendantFocusability="blocksDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp12"
+                android:text="@string/str_otc_assener_title1"
+                android:textColor="@color/tip_black"
+                android:textSize="@dimen/sp14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/dp12"
+                    android:text="@string/str_otc_currency"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="@string/str_otc_up_limit"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="@string/str_otc_add_premium"
+                    android:textSize="@dimen/sp12" />
+
+                <ImageView
+                    android:id="@+id/img_one_add"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:src="@mipmap/icon_add_currency" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/d_dddddd" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_add_curr_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/str_otc_assener_hint"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_add_curr"
+                    android:overScrollMode="never"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp16"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp12"
+                android:text="@string/str_otc_assener_title2"
+                android:textColor="@color/tip_black"
+                android:textSize="@dimen/sp14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/dp12"
+                    android:text="@string/str_otc_fr_currency"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="@string/str_otc_sell_pay_way"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="@dimen/sp12" />
+
+                <ImageView
+                    android:id="@+id/img_two_add"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:src="@mipmap/icon_add_currency" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/d_dddddd" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_add_pay_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/str_otc_assener_select_pay"
+                    android:textSize="@dimen/sp12"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_add_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:layout_marginBottom="@dimen/dp60">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </foxidcw.android.idcw.otc.widgets.widget.OTCJimPullBottomView>
+    </LinearLayout>
+</LinearLayout>

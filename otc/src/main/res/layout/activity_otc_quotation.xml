@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/otc_quotation_status_view_vi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp20"
+        android:background="@color/white" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp6">
+
+        <ImageButton
+            android:id="@+id/otc_quotation_close_ib"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:background="@null"
+            android:src="@mipmap/pop_close"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/limit_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp8"
+                android:layout_marginStart="@dimen/dp8"
+                android:gravity="center_vertical"
+                android:text="@string/str_otc_console_limit_time"
+                android:textColor="@color/color_bccbdf"
+                android:textSize="@dimen/dp14" />
+
+            <foxidcw.android.idcw.otc.widgets.widget.EndTimerTextView
+                android:id="@+id/otc_quotation_limit_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="#3b99fb"
+                android:textSize="@dimen/sp30" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/otc_quotation_type_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp12"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp12"
+            android:layout_marginStart="@dimen/dp12"
+            android:layout_marginTop="@dimen/dp8"
+            android:gravity="center"
+            android:text="@string/str_otc_quotation_info_with_90_minutes"
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/limit_container" />
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp12"
+        android:background="@drawable/bg_otc_blue_shdow">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/dp12"
+            android:paddingEnd="@dimen/dp12"
+            android:paddingStart="@dimen/dp12"
+            android:paddingTop="@dimen/dp8">
+
+            <TextView
+                android:id="@+id/otc_quotation_amount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_FF2968B9"
+                android:textSize="@dimen/sp16"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="1.0000 BTC" />
+
+            <RelativeLayout
+                android:id="@+id/otc_quotation_name_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                app:layout_constraintTop_toBottomOf="@+id/otc_quotation_amount_tv">
+
+                <TextView
+                    android:id="@+id/otc_quotation_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:text="John.D"
+                    android:textColor="@color/tip_black"
+                    android:textSize="@dimen/sp14"
+                    tools:ignore="RtlHardcoded" />
+
+                <ImageView
+                    android:id="@+id/otc_quotation_pay_type_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:src="@drawable/otc_bank_circle_icon"
+                    tools:ignore="RtlHardcoded" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/otc_quotation_appeal_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_otc_appeal_count"
+                android:textColor="@color/c_FF666666"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintTop_toBottomOf="@+id/otc_quotation_name_rl" />
+
+            <TextView
+                android:id="@+id/otc_quotation_sub_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:text="@string/str_otc_sub_pay_time"
+                android:textColor="@color/c_FF666666"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintTop_toBottomOf="@+id/otc_quotation_appeal_count_tv" />
+
+            <TextView
+                android:id="@+id/otc_quotation_sub_confirm_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:text="@string/str_otc_sub_confirm_buy_time"
+                android:textColor="@color/c_FF666666"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintTop_toBottomOf="@+id/otc_quotation_sub_time_tv" />
+
+            <TextView
+                android:id="@+id/otc_quotation_appeal_count_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0次"
+                android:textColor="@color/c_FF666666"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintBottom_toBottomOf="@+id/otc_quotation_appeal_count_tv"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/otc_quotation_sub_time_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1分12秒"
+                android:textColor="@color/c_FF666666"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintBottom_toBottomOf="@+id/otc_quotation_sub_time_tv"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/otc_quotation_sub_confirm_time_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1分12秒"
+                android:textColor="@color/c_FF666666"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintBottom_toBottomOf="@+id/otc_quotation_sub_confirm_time_tv"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <ImageView
+                android:id="@+id/otc_quotation_icon_alipay_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="@dimen/dp6"
+                android:layout_marginRight="@dimen/dp6"
+                android:src="@drawable/otc_alipay_circle_icon"
+                android:visibility="gone" />
+        </android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/otc_quotation_already_quote_fl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp93"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp12"
+        android:background="@drawable/bg_otc_blue_shdow"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/dp12"
+            android:paddingStart="@dimen/dp12">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp46"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otc_str_your_quote_price"
+                    android:textColor="@color/c_FF666666"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/otc_quotation_price_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp4"
+                    android:text="@string/otc_str_market_single_price"
+                    android:textColor="@color/c_FF999999"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/otc_quotation_single_price_key"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/dp4"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginRight="@dimen/dp4"
+                    android:layout_marginStart="@dimen/dp12"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="end|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/tip_black"
+                    android:textColorHint="@color/c_FF999999"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/otc_quotation_currency_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CNY"
+                    android:textColor="@color/tip_black"
+                    android:textSize="@dimen/sp12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/d_dddddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp46"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/otc_quotation_total_price_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_otc_quotation_total_price"
+                    android:textColor="@color/c_FF666666"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp4"
+                    android:layout_marginStart="@dimen/dp4"
+                    android:text="@string/otc_str_your_total_price_info"
+                    android:textColor="@color/c_FF999999"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/otc_quotation_total_price_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/dp4"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginRight="@dimen/dp4"
+                    android:layout_marginStart="@dimen/dp12"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="end|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/tip_black"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/otc_quotation_total_currency_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CNY"
+                    android:textColor="@color/tip_black"
+                    android:textSize="@dimen/sp12" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/otc_quotation_no_quote_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp12"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/otc_quotation_market_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp12"
+            android:text="@string/otc_str_market_price"
+            android:textColor="@color/c_FF666666"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/otc_quotation_market_price"
+            android:layout_marginStart="@dimen/dp4"
+            android:layout_toEndOf="@+id/otc_quotation_market_price"
+            android:text="@string/otc_str_market_single_price"
+            android:textColor="@color/c_FF999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/otc_quotation_market_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp12"
+            android:textColor="@color/c_FF333333"
+            android:textSize="12sp"
+            tools:text="100 CNY" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/otc_quotation_market_input_price_cr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/otc_quotation_market_price_tv"
+            android:layout_marginTop="@dimen/dp12"
+            android:background="@drawable/bg_otc_blue_shdow"
+            android:orientation="vertical"
+            android:padding="@dimen/dp12">
+
+            <TextView
+                android:id="@+id/otc_quotation_your_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/otc_str_your_quote_price"
+                android:textColor="@color/c_FF666666"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/otc_quotation_your_premium_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp4"
+                android:textColor="@color/c_FF999999"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintBaseline_toBaselineOf="@+id/otc_quotation_your_price"
+                app:layout_constraintLeft_toRightOf="@+id/otc_quotation_your_price"
+                tools:text="(单价，已设置溢价 +5%)" />
+
+            <TextView
+                android:id="@+id/otc_quotation_your_price_currency_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_FF333333"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintBaseline_toBaselineOf="@+id/otc_quotation_your_quote_price_tv"
+                app:layout_constraintBottom_toBottomOf="@+id/otc_quotation_your_quote_price_tv"
+                tools:text="CNY" />
+
+            <EditText
+                android:id="@+id/otc_quotation_your_quote_price_tv"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp36"
+                android:layout_marginStart="@dimen/dp6"
+                android:background="@null"
+                android:gravity="left|bottom"
+                android:hint="@string/str_otc_please_input_price"
+                android:inputType="numberDecimal"
+                android:textColor="@color/c_FF333333"
+                android:textSize="@dimen/sp20"
+                app:layout_constraintLeft_toRightOf="@+id/otc_quotation_your_price_currency_tv"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/otc_quotation_your_price"
+                tools:text="100" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginTop="@dimen/dp4"
+                android:background="@color/c_DDDDDD"
+                app:layout_constraintTop_toBottomOf="@+id/otc_quotation_your_quote_price_tv" />
+        </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp58"
+            android:layout_below="@+id/otc_quotation_market_input_price_cr"
+            android:paddingEnd="@dimen/dp12"
+            android:paddingStart="@dimen/dp12">
+
+            <TextView
+                android:id="@+id/otc_quotation_your_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/otc_str_your_total_price"
+                android:textColor="@color/c_FF666666"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp4"
+                android:layout_toEndOf="@+id/otc_quotation_your_total_price"
+                android:text="@string/otc_str_your_total_price_info"
+                android:textColor="@color/c_FF999999"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/otc_quotation_your_total_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/otc_quotation_your_total_price_currency_tv"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp4"
+                android:layout_toStartOf="@+id/otc_quotation_your_total_price_currency_tv"
+                android:textColor="@color/c_FF333333"
+                android:textSize="@dimen/sp20"
+                tools:text="105" />
+
+            <TextView
+                android:id="@+id/otc_quotation_your_total_price_currency_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/c_FF333333"
+                android:textSize="@dimen/sp12"
+                tools:text="CNY" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/otc_quotation_confirm_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_marginStart="@dimen/dp12"
+        android:background="@drawable/otc_add_pay_method_btn_bg_selector"
+        android:enabled="false"
+        android:text="@string/str_otc_single_buy_in"
+        android:textAllCaps="false"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/sp16" />
+</LinearLayout>

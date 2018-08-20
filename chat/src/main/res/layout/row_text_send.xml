@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/chat_row_padding_top">
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_userhead"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            style="@style/avatar_iv_style"/>
+
+        <RelativeLayout
+            android:id="@+id/bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:background="@drawable/chat_send_bubble_bg"
+            >
+
+            <TextView
+                android:id="@+id/tv_chatcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:layout_centerInParent="true"
+                android:gravity="center|left"
+                android:padding="@dimen/dp8"
+                tools:text="12312312312312312312312312312312312312312312312312312231231231231231231231231231231231231231231231223123123123123123123123123123123123123123123123"
+                android:minHeight="@dimen/size_avatar"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/white"
+                android:maxWidth="@dimen/dp250"
+                android:textSize="@dimen/sp12" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_chat_msg_status"/>
+
+        <include layout="@layout/view_msg_progress_bar"/>
+    </RelativeLayout>
+
+</LinearLayout>

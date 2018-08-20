@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cjwsc.idcm.widget.DampScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payment_method_add_or_edit_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_bg">
+
+    <LinearLayout
+        android:id="@+id/payment_method_add_or_edit_root_con_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/add_pay_method_select_currency_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp46"
+                android:paddingEnd="@dimen/dp10"
+                android:paddingStart="@dimen/dp10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_otc_fr_currency"
+                    android:textColor="@color/tip_black"
+                    android:textSize="@dimen/sp14" />
+
+                <ImageView
+                    android:id="@+id/pay_method_currency_code_iv"
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp6"
+                    android:layout_marginRight="@dimen/dp6"
+                    android:layout_toLeftOf="@+id/pay_method_currency_code_tv"
+                    android:layout_toStartOf="@+id/pay_method_currency_code_tv"
+                    android:src="@mipmap/ic_launcher"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pay_method_currency_code_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableEnd="@drawable/otc_arrow_down"
+                    android:drawablePadding="@dimen/dp4"
+                    android:drawableRight="@drawable/otc_arrow_down"
+                    android:text="@string/str_otc_select_fiat_currency"
+                    android:textColor="@color/c_FF999999"
+                    android:textSize="@dimen/sp14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="@dimen/dp12"
+                android:layout_marginStart="@dimen/dp12"
+                android:background="@color/d_dddddd" />
+
+            <RelativeLayout
+                android:id="@+id/add_pay_method_select_pay_type_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp46"
+                android:paddingEnd="@dimen/dp10"
+                android:paddingStart="@dimen/dp10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_otc_pay_type"
+                    android:textColor="@color/tip_black"
+                    android:textSize="@dimen/sp14" />
+
+                <ImageView
+                    android:id="@+id/pay_method_type_iv"
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp6"
+                    android:layout_marginRight="@dimen/dp6"
+                    android:layout_toLeftOf="@+id/pay_method_type_tv"
+                    android:layout_toStartOf="@+id/pay_method_type_tv"
+                    android:src="@mipmap/ic_launcher"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pay_method_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableEnd="@drawable/otc_arrow_down"
+                    android:drawablePadding="@dimen/dp4"
+                    android:drawableRight="@drawable/otc_arrow_down"
+                    android:text="@string/str_otc_select_pay_method"
+                    android:textColor="@color/c_FF999999"
+                    android:textSize="@dimen/sp14" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pay_method_alipay_container_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/dp12"
+                android:paddingStart="@dimen/dp12"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/d_dddddd" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp46">
+
+                    <TextView
+                        android:id="@+id/pay_method_alipay_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_otc_pay_account_name"
+                        android:textColor="@color/tip_black"
+                        android:textSize="@dimen/sp14" />
+
+                    <EditText
+                        android:id="@+id/pay_method_alipay_account_name_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp12"
+                        android:layout_marginStart="@dimen/dp12"
+                        android:layout_toRightOf="@+id/pay_method_alipay_name_tv"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="@string/str_otc_pay_input_account_name"
+                        android:singleLine="true"
+                        android:textColorHint="@color/c_FF999999"
+                        android:textSize="@dimen/sp14" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/d_dddddd" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp46">
+
+                    <TextView
+                        android:id="@+id/pay_method_alipay_account_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_otc_pay_alipay_account_name"
+                        android:textColor="@color/tip_black"
+                        android:textSize="@dimen/sp14" />
+
+                    <EditText
+                        android:id="@+id/pay_method_alipay_account_no_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp12"
+                        android:layout_marginStart="@dimen/dp12"
+                        android:layout_toRightOf="@+id/pay_method_alipay_account_tv"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="example@hotmail.com"
+                        android:singleLine="true"
+                        android:textColorHint="@color/c_FF999999"
+                        android:textSize="@dimen/sp14" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/d_dddddd" />
+
+                <RelativeLayout
+                    android:id="@+id/pay_method_qrcode_container_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp100"
+                    android:layout_marginBottom="@dimen/dp13"
+                    android:layout_marginTop="@dimen/dp13">
+
+                    <TextView
+                        android:id="@+id/pay_method_add_qrcode_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="@dimen/dp12"
+                        android:drawableTop="@drawable/otc_add_payment_method_img"
+                        android:text="@string/otc_str_add_payment_method_receiver"
+                        android:textColor="@color/c_FF2968B9"
+                        android:textSize="@dimen/sp14"
+                        android:visibility="gone" />
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/pay_method_img_qrcode_iv"
+                        android:layout_width="@dimen/dp90"
+                        android:layout_height="@dimen/dp100"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="bottom"
+                        android:scaleType="centerCrop"
+                        app:riv_corner_radius="5dp"
+                        tools:src="@mipmap/ic_launcher" />
+
+                    <ImageView
+                        android:id="@+id/pay_method_del_qrcode_ib"
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_gravity="top|right"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_marginTop="-8dp"
+                        android:layout_toRightOf="@+id/pay_method_img_qrcode_iv"
+                        android:src="@drawable/otc_del_payment_method_img" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pay_method_add_bank_container_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white"
+            android:divider="@drawable/layout_divider_line_ffdddddd"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/dp12"
+            android:paddingStart="@dimen/dp12"
+            android:showDividers="middle"
+            android:visibility="gone"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/add_pay_method_submit_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginEnd="@dimen/dp12"
+            android:layout_marginStart="@dimen/dp12"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/otc_add_pay_method_btn_bg_selector"
+            android:enabled="false"
+            android:text="@string/str_otc_accept_save"
+            android:textAllCaps="false"
+            android:textColor="@color/otc_add_pay_method_btn_color_selector"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+</com.cjwsc.idcm.widget.DampScrollView>

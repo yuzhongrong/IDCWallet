@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="app_name">二维码</string>-->
+    <string name="create_name">Voer informatie in</string>
+    <string name="edit_name">QR-code bewerken</string>
+    <!-- 二维码扫描 -->
+    <string name="extension_qrcode_scan_help_tips">"Lijn de zoeker uit met de QR-code om automatisch te scannen."</string>
+    <string name="album_btn">Foto album</string>
+    <string name="light_on_btn">Doe het licht aan</string>
+    <string name="light_off_btn">Doe het licht uit</string>
+    <string name="my_qrcode">Mijn QR-code</string>
+    <string name="scan_tip">Plaats de QR-code in het kader om te scannen</string>
+    <string name="scan_retry">Scanfout tweedimensionale code, gelieve opnieuw te scannen</string>
+    <string name="scan_title">veeg de</string>
+    <string name="scan_title_result">Scan resultaten</string>
+    <string name="QRCreate_noContent">Inhoud is leeg！</string>
+    <string name="save_to_picture">Opslaan naar lokaal</string>
+    <string name="press_again_exit">Druk opnieuw op om af te sluiten...</string>
+
+    <!-- ssss -->
+    <string name="screenshot_saving_ticker" msgid="7403652894056693515">"QR-code opslaan..."</string>
+    <string name="screenshot_saving_title" msgid="8242282144535555697">"QR-code opslaan..."</string>
+    <string name="screenshot_saving_text" msgid="2419718443411738818">"QR-code opslaan."</string>
+    <string name="screenshot_saved_title" msgid="6461865960961414961">"Vastgelegde QR-code."</string>
+    <string name="screenshot_saved_text" msgid="1152839647677558815">"Raak aan om uw QR-code te bekijken."</string>
+    <string name="screenshot_failed_title" msgid="705781116746922771">"Kan QR-code niet vastleggen."</string>
+    <string name="screenshot_failed_text" msgid="8134011269572415402">"Kan QR-code niet opslaan. Opslagapparaat is mogelijk in gebruik."</string>
+    <string name="doing_sao">het scannen...</string>
+    <string name="select_sao_picture">Selecteer een QR-code afbeelding</string>
+    <string name="error_restart_select">Scannen mislukt, selecteer opnieuw！</string>
+    <string name="er_sao">QR-code scannen</string>
+    <string name="extension_qrcode_scan_help_tip_login">"Alleen voor geautoriseerde aanmelding, scan het kassa-adres niet"</string>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/blue_main_title" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d100"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_flash_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/d42"
+                    android:layout_height="@dimen/d42"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_bibi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="@string/bibi_exchange"
+                    android:textColor="@color/tip_black"
+                    android:textSize="@dimen/sp14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_otc_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/d42"
+                    android:layout_height="@dimen/d42"
+                    android:src="@drawable/icon_otc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="@string/fabi_otc"
+                    android:textColor="@color/tip_black"
+                    android:textSize="@dimen/sp14" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp64"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <com.flyco.tablayout.CommonTabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp4"
+                android:layout_marginTop="@dimen/dp10"
+                app:tl_tab_padding="@dimen/dp20"
+                app:tl_iconVisible="false"
+                app:tl_tab_space_equal="false"
+                app:tl_indicator_color="@color/white"
+                app:tl_indicator_corner_radius="@dimen/dp5"
+                app:tl_textSelectColor="@color/white"
+                app:tl_textUnselectColor="#50ffffff"
+                app:tl_textsize="@dimen/sp16" />
+        </LinearLayout>
+
+        <com.cjwsc.idcm.widget.NoScrollViewPager
+            android:id="@+id/fragmentviewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp110"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp60"
+        android:src="@mipmap/img_market_clear"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp12"
+        android:gravity="center"
+        android:text="@string/tv_open_market"
+        android:textColor="@color/tip_black"
+        android:textSize="@dimen/sp14"
+        android:visibility="gone" />
+
+</LinearLayout>

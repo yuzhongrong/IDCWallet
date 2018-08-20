@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp182"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center|bottom"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            android:textColor="@color/tip_black"
+            android:text="@string/tv_hint"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/d10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/tip_black"
+            android:text="@string/text_select_error"/>
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/d28"
+            android:background="@drawable/sw_tip_blue_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/tv_sure_try"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

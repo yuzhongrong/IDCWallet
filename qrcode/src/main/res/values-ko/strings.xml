@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="app_name">二维码</string>-->
+    <string name="create_name">정보 입력</string>
+    <string name="edit_name">QR 코드 수정</string>
+    <!-- 二维码扫描 -->
+    <string name="extension_qrcode_scan_help_tips">"자동으로 스캔하려면 뷰 파인더를 QR 코드와 정렬하십시오."</string>
+    <string name="album_btn">사진 앨범</string>
+    <string name="light_on_btn">조명</string>
+    <string name="light_off_btn">빛을 끄십시오.</string>
+    <string name="my_qrcode">내 QR 코드</string>
+    <string name="scan_tip">스캔 할 프레임에 QR 코드를 넣으십시오.</string>
+    <string name="scan_retry">2 차원 코드 스캔 오류가 발생했습니다. 다시 스캔하십시오.</string>
+    <string name="scan_title">스윕</string>
+    <string name="scan_title_result">스캔 결과</string>
+    <string name="QRCreate_noContent">내용이 비어 있습니다！</string>
+    <string name="save_to_picture">로컬에 저장</string>
+    <string name="press_again_exit">종료하려면 다시 누릅니다...</string>
+
+    <!-- ssss -->
+    <string name="screenshot_saving_ticker" msgid="7403652894056693515">"QR 코드 저장..."</string>
+    <string name="screenshot_saving_title" msgid="8242282144535555697">"QR 코드 저장..."</string>
+    <string name="screenshot_saving_text" msgid="2419718443411738818">"QR 코드 저장."</string>
+    <string name="screenshot_saved_title" msgid="6461865960961414961">"캡처 된 QR 코드."</string>
+    <string name="screenshot_saved_text" msgid="1152839647677558815">"QR 코드를 보려면 터치하십시오."</string>
+    <string name="screenshot_failed_title" msgid="705781116746922771">"QR 코드를 캡처 할 수 없습니다."</string>
+    <string name="screenshot_failed_text" msgid="8134011269572415402">"QR 코드를 저장할 수 없습니다. 저장 장치가 사용 중일 수 있습니다."</string>
+    <string name="doing_sao">스캐닝...</string>
+    <string name="select_sao_picture">QR 코드 사진 선택</string>
+    <string name="error_restart_select">스캔하지 못했습니다. 다시 선택하십시오！</string>
+    <string name="er_sao">QR 코드 스캐닝</string>
+    <string name="extension_qrcode_scan_help_tip_login">"승인 된 로그인의 경우에만 금전 등록기 주소를 스캔하지 마십시오."</string>
+</resources>

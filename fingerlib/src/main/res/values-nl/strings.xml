@@ -1,0 +1,15 @@
+<resources>
+    <!--<string name="app_name">FingerLibrary</string>-->
+    <string name="verify_error">Touch ID Verificatie mislukt</string>
+    <string name="verify_failed">Probeer het opnieuw</string>
+    <string name="start_failed">Starten mislukt, apparatuur tijdelijk geblokkeerd</string>
+    <string name="verify_error_text">Touch ID Verificatie mislukt</string>
+    <string name="after_try">Touch ID Verificatie vaak，opnieuw proberen</string>
+    <string name="device_not_support">Apparaat ondersteunt niet</string>
+    <string name="set_touch">Niet ingesteld Touch ID，oprichten Touch ID</string>
+    <string name="touch_pay">Touch ID</string>
+    <string name="touch_pay_less">Touch ID Controleer de ontgrendeling</string>
+    <string name="str_cancel">geannuleerd</string>
+    <string name="inout_pass">Voer het wachtwoord in</string>
+    <string name="inout_pin">binnenkomst PIN</string>
+</resources>

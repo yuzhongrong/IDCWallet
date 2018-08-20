@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp216"
+        android:background="#30394F">
+
+        <ImageView
+            android:layout_width="@dimen/dp132"
+            android:layout_height="@dimen/dp86"
+            android:layout_gravity="center"
+            android:src="@drawable/common_icon_idcw_top_logo" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/idcw_with_draw_container_one_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48">
+
+                <ImageButton
+                    android:id="@+id/idcw_with_draw_close_ib"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/common_icon_close_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/pay_str_input_extraction_address"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="#dddddd" />
+
+            <TextView
+                android:id="@+id/idcw_with_draw_quantity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp16"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="@dimen/sp18" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp60"
+                android:layout_marginTop="@dimen/dp35">
+
+                <TextView
+                    android:id="@+id/idcw_with_draw_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginStart="@dimen/dp12"
+                    android:gravity="center|left"
+                    android:text="@string/address"
+                    android:textSize="@dimen/sp12"
+                    app:layout_constraintBottom_toBottomOf="@+id/idcw_with_draw_copy_address_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/idcw_with_draw_copy_address_tv" />
+
+                <TextView
+                    android:id="@+id/idcw_with_draw_copy_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:background="@drawable/pay_tianer_blue"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp6"
+                    android:paddingRight="@dimen/dp6"
+                    android:text="@string/tx_copy"
+                    android:textColor="@color/tian_tip_blue"
+                    android:textSize="@dimen/sp10"
+                    app:layout_constraintLeft_toRightOf="@+id/idcw_with_draw_address_tv" />
+
+                <TextView
+                    android:id="@+id/idcw_with_draw_scan_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:drawablePadding="@dimen/dp5"
+                    android:drawableTop="@mipmap/icon_sao"
+                    android:text="@string/sao_yi_sao"
+                    android:textColor="@color/tian_tip_blue"
+                    android:textSize="@dimen/sp10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <foxidcw.android.idcw.common.widget.ClearableEditText
+                    android:id="@+id/idcw_with_draw_input_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="@dimen/dp12"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:layout_marginStart="@dimen/dp12"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/please_input_add"
+                    android:singleLine="true"
+                    android:textColor="@color/tip_black"
+                    android:textColorHint="@color/white_gray"
+                    android:textSize="@dimen/sp12"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/idcw_with_draw_scan_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/idcw_with_draw_copy_address_tv" />
+            </android.support.constraint.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp12"
+                android:background="#dddddd" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/idcw_with_draw_extra_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp42"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginRight="@dimen/dp12"
+                android:background="@drawable/common_bg_2e406b_6"
+                android:gravity="center"
+                android:text="@string/str_otc_withdraw"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/idcw_with_draw_container_two_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48">
+
+                <ImageButton
+                    android:id="@+id/idcw_with_draw_back_ib"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/ic_back_black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/str_otc_withdraw_pay_title_text"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="#dddddd" />
+
+            <TextView
+                android:id="@+id/idcw_with_draw_quantity_two_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp16"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="@dimen/sp18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp35"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:text="@string/pay_str_extraction_address"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/idcw_with_draw_address_two_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp32"
+                    android:layout_marginStart="@dimen/dp32"
+                    android:gravity="center|right"
+                    android:paddingRight="@dimen/dp12"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="#dddddd" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/idcw_with_draw_confirm_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp42"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginRight="@dimen/dp12"
+                android:background="@drawable/common_bg_2e406b_6"
+                android:gravity="center"
+                android:text="@string/str_otc_withdraw_pay_text"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
+

@@ -1,0 +1,15 @@
+<resources>
+    <!--<string name="app_name">FingerLibrary</string>-->
+    <string name="verify_error">Touch ID 오류 확인</string>
+    <string name="verify_failed">다시 시도하십시오.</string>
+    <string name="start_failed">기기를 일시적으로 잠그지 못했습니다.</string>
+    <string name="verify_error_text">Touch ID 확인하지 못했습니다.</string>
+    <string name="after_try">Touch ID 자주，재시도</string>
+    <string name="device_not_support">기기가 지원하지 않습니다.</string>
+    <string name="set_touch">설정되지 않음 Touch ID，설정 Touch ID</string>
+    <string name="touch_pay">Touch ID</string>
+    <string name="touch_pay_less">Touch ID 잠금 해제 확인</string>
+    <string name="str_cancel">취소</string>
+    <string name="inout_pass">비밀번호 입력</string>
+    <string name="inout_pin">잃어버린PIN</string>
+</resources>

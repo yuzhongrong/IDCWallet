@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_set_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp4"
+        android:orientation="horizontal">
+        <View
+            android:id="@+id/view_one"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp4"
+            android:layout_weight="1"
+            android:background="@color/tian_tip_blue"/>
+
+        <View
+            android:id="@+id/view_two"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp4"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:background="@color/tian_tip_blue"/>
+
+        <View
+            android:id="@+id/view_three"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp4"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:background="@color/tian_tip_blue"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_set_pass_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_set_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp52"
+                android:gravity="center"
+                android:text="@string/please_input_original_pass"
+                android:textColor="@color/tip_black"
+                android:textSize="@dimen/sp16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp32"
+                android:layout_marginRight="@dimen/dp32"
+                android:background="@color/gray_line_90"/>
+
+            <com.idcg.idcw.widget.NewPasswordView
+                android:id="@+id/passwordView"
+                android:layout_width="@dimen/dp290"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_gravity="center"
+                app:cipherEnable="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:layout_marginLeft="@dimen/dp32"
+                android:layout_marginRight="@dimen/dp32"
+                android:background="@color/gray_line_90"/>
+
+            <TextView
+                android:id="@+id/tv_forget_pay_pass"
+                android:layout_width="310dp"
+                android:textColor="@color/tian_tip_blue"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_forget_pay_pass"/>
+
+            <TextView
+                android:id="@+id/btn_set_pass_sure"
+                android:layout_width="@dimen/dp300"
+                android:layout_height="@dimen/dp40"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp42"
+                android:textAllCaps="false"
+                android:background="@drawable/item_gray_black"
+                android:gravity="center"
+                android:text="@string/tv_next_more_step"
+                android:textColor="@color/gray_90"
+                android:textSize="@dimen/sp15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_set_pass_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp52"
+                android:gravity="center"
+                android:textColor="@color/tip_black"
+                android:text="@string/please_input_new_pass"
+                android:textSize="@dimen/sp16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp32"
+                android:layout_marginRight="@dimen/dp32"
+                android:background="@color/gray_line_90"/>
+
+            <com.idcg.idcw.widget.NewPasswordViewAgain
+                android:id="@+id/passwordView_again"
+                android:layout_width="@dimen/dp290"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_gravity="center"
+                app:cipherEnable="true" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:layout_marginLeft="@dimen/dp32"
+                android:layout_marginRight="@dimen/dp32"
+                android:background="@color/gray_line_90"/>
+
+            <TextView
+                android:id="@+id/btn_set_pass_sure_again"
+                android:layout_width="@dimen/dp300"
+                android:layout_height="@dimen/dp40"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp42"
+                android:background="@drawable/item_gray_black"
+                android:gravity="center"
+                android:text="@string/tv_next_more_step"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_90"
+                android:textSize="@dimen/sp15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_set_pass_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp52"
+                android:gravity="center"
+                android:textColor="@color/tip_black"
+                android:text="@string/please_input_again_pass"
+                android:textSize="@dimen/sp16" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp32"
+                android:layout_marginRight="@dimen/dp32"
+                android:background="@color/gray_line_90"/>
+
+            <com.idcg.idcw.widget.NewPasswordViewThird
+                android:id="@+id/passwordView_third"
+                android:layout_width="@dimen/dp290"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                app:cipherEnable="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp32"
+                android:layout_marginRight="@dimen/dp32"
+                android:background="@color/gray_line_90"/>
+
+            <TextView
+                android:id="@+id/btn_set_pass_sure_third"
+                android:layout_width="@dimen/dp300"
+                android:layout_height="@dimen/dp40"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp42"
+                android:background="@drawable/item_gray_black"
+                android:gravity="center"
+                android:text="@string/tv_sure"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_90"
+                android:textSize="@dimen/sp15" />
+
+        </LinearLayout>
+
+        <com.idcg.idcw.widget.NewKeyBoard
+            android:id="@+id/pin_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp220"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible">
+        </com.idcg.idcw.widget.NewKeyBoard>
+
+        <com.idcg.idcw.widget.NewKeyBoard
+            android:id="@+id/pin_keyboard1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp220"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+        </com.idcg.idcw.widget.NewKeyBoard>
+        <com.idcg.idcw.widget.NewKeyBoard
+            android:id="@+id/pin_keyboard2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp220"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+        </com.idcg.idcw.widget.NewKeyBoard>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_root"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp60"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/update_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp6"
+        android:textSize="@dimen/sp14"
+        android:textColor="@color/tip_black"
+        android:layout_toRightOf="@+id/icon"
+        android:singleLine="true"
+        android:layout_marginStart="@dimen/dp12"
+        android:text="ICDW Wallet v2.1.2主要更新"
+        android:layout_marginTop="@dimen/dp3"
+        android:layout_marginLeft="@dimen/dp12" />
+
+
+
+    <TextView
+        android:id="@+id/update_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp12"
+        android:textColor="@color/gray_black"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/update_title"
+        android:paddingTop="@dimen/dp6"
+        android:text=""
+        android:singleLine="true"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginEnd="@dimen/dp32"
+        android:layout_marginRight="@dimen/dp32"
+        android:layout_marginLeft="@dimen/dp12" />
+
+
+
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp10"
+        android:textColor="@color/tip_gray"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/dp20"
+        android:src="@mipmap/right_arrow"
+        android:layout_marginTop="@dimen/dp3"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_alignParentRight="true" />
+
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="app_name">Qr code</string>-->
+    <string name="create_name">The input information</string>
+    <string name="edit_name">Edit qr code.</string>
+    <!-- 二维码扫描 -->
+    <string name="extension_qrcode_scan_help_tips">"Please align the viewfinder to the qr code and scan automatically."</string>
+    <string name="album_btn">Photo album</string>
+    <string name="light_on_btn">Turn on the light</string>
+    <string name="light_off_btn">Turn off the lights</string>
+    <string name="my_qrcode">My qr code.</string>
+    <string name="scan_tip">Please scan the qr code in the viewfinder.</string>
+    <string name="scan_retry">The qr code scan error, please scan again.</string>
+    <string name="scan_title">scan</string>
+    <string name="scan_title_result">Scan result</string>
+    <string name="QRCreate_noContent">The content is empty！</string>
+    <string name="save_to_picture">Save to local</string>
+    <string name="press_again_exit">One more exit.</string>
+
+    <!-- ssss -->
+    <string name="screenshot_saving_ticker" msgid="7403652894056693515">"The qr code is being saved."</string>
+    <string name="screenshot_saving_title" msgid="8242282144535555697">"The qr code is being saved."</string>
+    <string name="screenshot_saving_text" msgid="2419718443411738818">"The qr code is being saved."</string>
+    <string name="screenshot_saved_title" msgid="6461865960961414961">"The qr code has been captured."</string>
+    <string name="screenshot_saved_text" msgid="1152839647677558815">"Touch can view your qr code."</string>
+    <string name="screenshot_failed_title" msgid="705781116746922771">"Unable to capture qr codes."</string>
+    <string name="screenshot_failed_text" msgid="8134011269572415402">"Unable to save qr code. The storage device may be in use."</string>
+    <string name="doing_sao">Scanning...</string>
+    <string name="select_sao_picture">Select the qr code picture.</string>
+    <string name="error_restart_select">Scan failed, please choose again!</string>
+    <string name="er_sao">Scan</string>
+    <string name="extension_qrcode_scan_help_tip_login">Please ensure to scan a login QR code\nand not a coin deposit address</string>
+</resources>

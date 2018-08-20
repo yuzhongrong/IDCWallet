@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_exit_back_phrase"
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/sp15"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp30"/>
+
+        <TextView
+            android:id="@+id/out_sure"
+            android:layout_width="@dimen/dp235"
+            android:layout_height="@dimen/dp40"
+            android:layout_gravity="center"
+            android:background="@drawable/sw_ripple_btn_bg"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/dp30"
+            android:gravity="center"
+            android:text="@string/out_exit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:id="@+id/out_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textColor="@color/tipper_blue_color"
+            android:textSize="@dimen/sp15"
+            android:layout_marginBottom="@dimen/dp24"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp24"/>
+
+    </LinearLayout>
+
+</LinearLayout>

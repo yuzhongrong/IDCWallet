@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/blue_main_title" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dp290"
+        android:layout_height="@dimen/dp20"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp50"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_user_set" />
+
+        <com.idcg.idcw.widget.InPutEditText
+            android:id="@+id/id_et_ac_email_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/tv_enter_pay_email"
+            android:inputType="text"
+            android:paddingEnd="@dimen/dp18"
+            android:paddingRight="@dimen/dp18"
+            android:textColor="@color/tip_black"
+            android:textColorHint="@color/white_gray"
+            android:textSize="@dimen/sp14"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp290"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp6"
+        android:background="@color/sw_arrow_bg" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dp290"
+        android:layout_height="@dimen/dp20"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp25"
+        android:orientation="horizontal">
+
+        <com.idcg.idcw.widget.InPutEditText
+            android:id="@+id/id_et_ac_email_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5.5"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/tv_enter_code"
+            android:inputType="number"
+            android:paddingLeft="@dimen/dp16"
+            android:textColor="@color/tip_black"
+            android:textColorHint="@color/white_gray"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/id_tv_ac_email_get_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_weight="3"
+            android:gravity="center|right"
+            android:paddingRight="@dimen/dp12"
+            android:text="@string/tv_get_code"
+            android:textColor="@color/tip_gray"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp290"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp6"
+        android:background="@color/sw_arrow_bg" />
+
+    <TextView
+        android:id="@+id/id_btn_ac_email_bind"
+        android:layout_width="@dimen/dp290"
+        android:layout_height="@dimen/dp40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp45"
+        android:background="@drawable/btn_enable_state_selector"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/bind"
+        android:textAllCaps="false"
+        android:textColor="@color/color_f9f9fa"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

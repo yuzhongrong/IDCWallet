@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:gravity="bottom|center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/acceptor_quote_close_iv"
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:layout_marginBottom="@dimen/dp12"
+        android:src="@drawable/otc_icon_acceptor_delete"
+        app:layout_constraintBottom_toTopOf="@+id/acceptor_quote_info_tv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/acceptor_quote_info_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginRight="@dimen/dp12"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp10"
+        android:text="@string/str_otc_select_order_pop_title"
+        android:textColor="@color/c_FFFF925E"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintBottom_toTopOf="@+id/acceptor_quote_items_rv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/acceptor_quote_items_rv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp360"
+        android:layout_marginBottom="@dimen/dp48"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</LinearLayout>

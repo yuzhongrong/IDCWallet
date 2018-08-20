@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f7f7f7"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/otc_console_status_view_vi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp20"
+        android:background="@color/white" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp6">
+
+        <ImageButton
+            android:id="@+id/otc_console_close_ib"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:background="@null"
+            android:src="@mipmap/pop_close"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/limit_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp8"
+                android:layout_marginStart="@dimen/dp8"
+                android:gravity="center_vertical"
+                android:text="@string/str_otc_console_limit_time"
+                android:textColor="@color/color_bccbdf"
+                android:textSize="@dimen/dp14" />
+
+            <foxidcw.android.idcw.otc.widgets.widget.EndTimerTextView
+                android:id="@+id/otc_console_limit_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="#3b99fb"
+                android:textSize="@dimen/sp30" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/otc_console_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:text="@string/str_otc_console_buy_info"
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/limit_container" />
+    </android.support.constraint.ConstraintLayout>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/otc_console_tab_magic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp37"
+        android:layout_marginTop="@dimen/dp7"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp3"
+        android:paddingTop="@dimen/dp3" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp7"
+        android:layout_weight="1"
+        app:srlEnableLoadmore="false"
+        app:srlEnableRefresh="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/otc_console_items_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/otc_console_no_data_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp30"
+                android:drawablePadding="@dimen/dp17"
+                android:drawableTop="@drawable/otc_no_qupte_orders"
+                android:gravity="center"
+                android:text="@string/otc_str_system_processing"
+                android:textColor="@color/tip_black"
+                android:textSize="@dimen/sp14"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

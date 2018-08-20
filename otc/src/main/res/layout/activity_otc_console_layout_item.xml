@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp96"
+    android:layout_marginBottom="@dimen/dp7"
+    android:background="@color/white"
+    android:padding="@dimen/dp12">
+
+    <TextView
+        android:id="@+id/otc_console_item_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alex. B"
+        android:textColor="@color/tip_black"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/otc_console_item_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1200 CNY"
+        android:textColor="@color/c_FFFF862F"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/otc_console_item_appeal_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp4"
+        android:text="被申诉次数：1"
+        android:textColor="@color/tip_black"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/otc_console_item_pay_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="平均支付时间：01:02"
+        android:textColor="@color/tip_black"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/otc_console_item_paytype_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/activity_otc_console_layout_item_horizontal_divider"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/otc_console_item_wechat_iv"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/otc_console_item_alipay_iv"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/otc_console_item_bank_iv"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="visible" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

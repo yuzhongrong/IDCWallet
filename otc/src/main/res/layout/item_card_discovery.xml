@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp130"
+    android:layout_marginTop="@dimen/dp8"
+    android:layout_marginLeft="@dimen/dp12"
+    android:layout_marginRight="@dimen/dp12"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/img_game_list"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_otc_discovery_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp6"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/tipper_blue_color"
+                android:textSize="@dimen/sp14" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_otc_card_discovery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp6"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_marginTop="@dimen/dp2"
+                android:overScrollMode="never">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

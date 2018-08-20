@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f7f7f7"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/blue_main_title" />
+
+    <RelativeLayout
+        android:id="@+id/ll_select_curr"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/dp12"
+            android:text="@string/str_otc_accept_curr"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp13" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp12"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_curr_and_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/img_select"
+                        android:layout_width="@dimen/dp28"
+                        android:layout_height="@dimen/dp28"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/dp4" />
+
+                    <TextView
+                        android:id="@+id/tv_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/img_right"
+                        android:text="BTC"
+                        android:textColor="@color/tip_black"
+                        android:textSize="@dimen/sp13" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_select_curr_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/str_otc_select_curr"
+                    android:textColor="@color/c_FF999999"
+                    android:textSize="@dimen/sp13" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_toRightOf="@+id/tv_right"
+                android:src="@mipmap/arrow_down" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_marginLeft="@dimen/dp12"
+        android:background="@color/d_dddddd" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/pay_method_alipay_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/str_otc_accept_curr_up"
+            android:textColor="@color/color_666666"
+            android:paddingLeft="@dimen/dp12"
+            android:textSize="@dimen/sp13" />
+
+        <EditText
+            android:id="@+id/ed_amount_up_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginStart="@dimen/dp12"
+            android:paddingRight="@dimen/dp12"
+            android:layout_toRightOf="@+id/pay_method_alipay_account_tv"
+            android:layout_toLeftOf="@+id/tv_curr_type_one"
+            android:background="@null"
+            android:inputType="text"
+            android:gravity="right|center_vertical"
+            android:hint="@string/str_otc_accept_input_up"
+            android:textColorHint="@color/c_FF999999"
+            android:digits="0123456789-."
+            android:textSize="@dimen/sp13"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/ed_up_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginStart="@dimen/dp12"
+            android:paddingRight="@dimen/dp6"
+            android:layout_toRightOf="@+id/pay_method_alipay_account_tv"
+            android:layout_toLeftOf="@+id/tv_curr_type_one"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:inputType="text"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:digits="0123456789."
+            android:hint="@string/str_otc_accept_input_up"
+            android:textColorHint="@color/c_FF999999"
+            android:textSize="@dimen/sp13" />
+
+        <TextView
+            android:id="@+id/tv_curr_type_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:visibility="gone"
+            android:clickable="false"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dp12"
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/sp13" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp12"
+            android:gravity="center|right"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="@dimen/dp100"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="@string/str_otc_accept_input_up"
+                android:inputType="numberDecimal"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/sp13"
+                android:visibility="gone" />
+
+            <EditText
+                android:layout_width="@dimen/dp100"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="@string/str_otc_accept_input_up"
+                android:inputType="numberDecimal"
+                android:paddingRight="@dimen/dp8"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/sp13"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_marginLeft="@dimen/dp12"
+        android:background="@color/d_dddddd" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/pay_method_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_666666"
+            android:paddingLeft="@dimen/dp12"
+            android:textSize="@dimen/sp13"
+            android:text="@string/str_otc_accept_curr_down" />
+
+        <EditText
+            android:id="@+id/ed_amount_down_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="@string/str_otc_accept_input_down"
+            android:paddingRight="@dimen/dp12"
+            android:textColorHint="@color/c_FF999999"
+            android:digits="0123456789-."
+            android:inputType="number"
+            android:textSize="@dimen/sp13"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/ed_up_down"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginStart="@dimen/dp12"
+            android:paddingRight="@dimen/dp6"
+            android:layout_toRightOf="@+id/pay_method_account_tv"
+            android:layout_toLeftOf="@+id/tv_curr_type"
+            android:background="@null"
+            android:inputType="text"
+            android:singleLine="true"
+            android:gravity="right|center_vertical"
+            android:digits="0123456789."
+            android:visibility="gone"
+            android:hint="@string/str_otc_accept_input_down"
+            android:textColorHint="@color/c_FF999999"
+            android:textSize="@dimen/sp13" />
+
+        <TextView
+            android:id="@+id/tv_curr_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:visibility="gone"
+            android:clickable="false"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dp12"
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/sp13" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dp200"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp12"
+            android:gravity="center|right"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_marginLeft="@dimen/dp12"
+        android:background="@color/d_dddddd" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/add_method_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_666666"
+            android:paddingLeft="@dimen/dp12"
+            android:textSize="@dimen/sp13"
+            android:text="@string/str_otc_add_premium" />
+
+        <foxidcw.android.idcw.otc.widgets.widget.AddOrReduceView
+            android:id="@+id/add_reduce_view"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp12"
+            android:layout_height="wrap_content">
+
+        </foxidcw.android.idcw.otc.widgets.widget.AddOrReduceView>
+        <EditText
+            android:id="@+id/ed_select_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginStart="@dimen/dp12"
+            android:paddingRight="@dimen/dp28"
+            android:layout_toRightOf="@+id/add_method_price_tv"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:inputType="number"
+            android:visibility="gone"
+            android:textColorHint="@color/c_FF999999"
+            android:textSize="@dimen/sp13"
+            android:digits="0123456789-."
+            android:hint="@string/str_otc_accept_input_edit" />
+
+        <TextView
+            android:id="@+id/tv_select_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp12"
+            android:text="%"
+            android:visibility="gone"
+            android:clickable="false"
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/sp13" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_str_apply_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingRight="@dimen/dp12"
+        android:paddingLeft="@dimen/dp12"
+        android:paddingBottom="@dimen/dp12"
+        android:text="@string/str_otc_add_curr_price"
+        android:textSize="@dimen/sp12" />
+
+    <TextView
+        android:id="@+id/btn_accept_buy_curr"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginRight="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp22"
+        android:background="@drawable/item_gray_black"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/str_otc_accept_save"
+        android:textAllCaps="false"
+        android:textColor="@color/gray_90"
+        android:textSize="@dimen/sp15" />
+</LinearLayout>

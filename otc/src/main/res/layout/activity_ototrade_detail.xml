@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yy.chat.widget.FixAdjustResizeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/dp64">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:elevation="0dp"
+            app:layout_behavior="foxidcw.android.idcw.otc.widgets.FixAppBarLayoutFlingEventBounceBehavior">
+
+            <LinearLayout
+                android:id="@+id/layout_detail_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll">
+
+                <foxidcw.android.idcw.otc.widgets.widget.OTCTradeDetailStatusLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <foxidcw.android.idcw.otc.widgets.widget.OTCTradeDetailOrderLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <foxidcw.android.idcw.otc.widgets.widget.OTCTradeDetailPayTypeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <foxidcw.android.idcw.otc.widgets.widget.OTCTradeDetailBottomOptionLayout
+                    android:id="@+id/bottom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <foxidcw.android.idcw.otc.widgets.widget.OTCTradeDetailUploadCertificateLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/view_toggle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:minHeight="@dimen/dp15">
+
+                    <ImageView
+                        android:id="@+id/iv_slide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp10" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <com.yy.chat.widget.MessageList
+                android:id="@+id/message_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp6"
+                android:background="@drawable/otc_bottom_shadow_line" />
+        </FrameLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    <!--<foxidcw.android.idcw.otc.widgets.widget.SlidingMenuVertical
+        android:layout_marginTop="@dimen/dp64"
+        android:id="@+id/slidingMenu"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+        </LinearLayout>
+
+    </foxidcw.android.idcw.otc.widgets.widget.SlidingMenuVertical>-->
+    <include layout="@layout/blue_main_title" />
+    <!--&lt;!&ndash;这里我在代码中手动设置在MessageList的下面&ndash;&gt;-->
+    <com.yy.chat.widget.ChatInputMenu
+        android:id="@+id/input_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</com.yy.chat.widget.FixAdjustResizeRelativeLayout>

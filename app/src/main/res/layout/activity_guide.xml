@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_page"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_bg"
+        android:layout_width="@dimen/dp223"
+        android:layout_height="@dimen/dp223"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp108"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon_app_gif"/>
+    
+    <ImageView
+        android:layout_below="@+id/gif_bg"
+        android:layout_width="@dimen/dp172"
+        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/dp22"
+        android:layout_marginTop="@dimen/dp28"
+        android:src="@mipmap/icon_text_logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_login_wallet"
+            android:layout_width="220dp"
+            android:layout_height="@dimen/dp40"
+            android:layout_gravity="center"
+            android:background="@drawable/sw_ripple_btn_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp16" />
+
+        <Button
+            android:id="@+id/btn_create_wallet"
+            android:layout_width="220dp"
+            android:layout_height="@dimen/dp40"
+            android:layout_gravity="center"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/sw_ripple_blue"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="@string/tv_create_wallet"
+            android:textColor="@color/tipper_blue_color"
+            android:textSize="@dimen/dp16" />
+    </LinearLayout>
+
+
+</RelativeLayout>

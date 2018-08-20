@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+             android:background="@color/color_f6f6f6"
+    android:layout_marginBottom="@dimen/dp48">
+
+    <View
+        android:id="@+id/bg_view"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp300"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/smartrefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinator_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f6f6f6"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsingtoolbarlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:expandedTitleGravity="top|center_horizontal"
+                    app:expandedTitleMarginBottom="@dimen/d100"
+                    app:expandedTitleMarginStart="@dimen/d10"
+                    app:expandedTitleMarginTop="@dimen/d42"
+                    app:expandedTitleTextAppearance="@style/CollapsingToolbarLayout_style"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:titleEnabled="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/layout_trade_side"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:orientation="horizontal">
+
+
+                            <!--android:layout_toLeftOf="@+id/tv_sell"-->
+                            <TextView
+                                android:id="@+id/tv_buy"
+                                style="@style/text_16_2E406B"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp12"
+                                android:layout_marginRight="@dimen/dp4"
+                                android:layout_weight="1"
+                                android:paddingBottom="@dimen/dp1"
+                                android:background="@drawable/bg_otc_transaction_rectangle_btn"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:text="@string/str_otc_buy"
+                                android:textAllCaps="false" />
+
+                            <TextView
+                                android:id="@+id/tv_sell"
+                                style="@style/text_16_8191BB"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/d4"
+                                android:layout_marginRight="@dimen/dp12"
+                                android:paddingBottom="@dimen/dp1"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_otc_transaction_rectangle_btn_unselect"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:text="@string/str_otc_sell"
+                                android:textAllCaps="false" />
+
+
+                        </LinearLayout>
+
+                        <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/dp8"-->
+                            <!--android:layout_marginTop="@dimen/dp10"-->
+                            <!--android:background="#F6F6F6" />-->
+
+                        <com.cjwsc.idcm.widget.NoScrollViewPager
+                            android:id="@+id/fragmentviewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp300"
+                            android:layout_below="@+id/include" />
+                    </LinearLayout>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:background="@color/white"
+                    app:layout_scrollFlags="enterAlways">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp3"
+                        android:layout_height="@dimen/dp14"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp12"
+                        android:layout_marginStart="@dimen/dp12"
+                        android:src="@mipmap/icon_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp4"
+                        android:layout_marginStart="@dimen/dp4"
+                        android:text="@string/str_otc_record"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/sp12" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="@color/c_DDDDDD"
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"/>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_f6f6f6"
+                android:clickable="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.design.widget.CoordinatorLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <FrameLayout
+        android:id="@+id/badgeroot"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp80"
+        android:layout_gravity="bottom|end"
+        android:padding="@dimen/dp5"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/dp5"
+        >
+        <!--android:layout_marginBottom="@dimen/dp10"-->
+
+        <ImageView
+            android:id="@+id/flb_acceptor_notice"
+            android:layout_width="@dimen/dp70"
+            android:layout_height="@dimen/dp70"
+            android:src="@mipmap/icon_float_action"
+
+            />
+
+    </FrameLayout>
+
+
+
+</FrameLayout>

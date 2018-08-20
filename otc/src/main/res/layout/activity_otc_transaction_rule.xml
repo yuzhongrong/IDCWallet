@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/blue_main_title"/>
+
+    <com.cjwsc.idcm.widget.DampScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c_f7f7f7"
+            android:orientation="vertical"
+            >
+            <!--买入规则-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    style="@style/text_14_333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:includeFontPadding="false"
+                    android:text="@string/str_otc_buy_rule_title"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:background="@color/c_DDDDDD"
+                    />
+
+                <TextView
+                    style="@style/text_12_666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:text="@string/str_otc_buy_rule_content_1"
+                    />
+
+                <TextView
+                    style="@style/text_12_666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:text="@string/str_otc_buy_rule_content_2"
+                    />
+
+                <TextView
+                    style="@style/text_12_666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:text="@string/str_otc_buy_rule_content_3"
+                    />
+
+            </LinearLayout>
+
+            <!--卖出规则-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp12"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    style="@style/text_14_333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:includeFontPadding="false"
+                    android:text="@string/str_otc_sell_rule_title"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:background="@color/c_DDDDDD"
+                    />
+
+                <TextView
+                    style="@style/text_12_666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:text="@string/str_otc_sell_rule_content_1"
+                    />
+
+                <TextView
+                    style="@style/text_12_666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:text="@string/str_otc_sell_rule_content_2"
+                    />
+
+                <TextView
+                    style="@style/text_12_666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:text="@string/str_otc_sell_rule_content_3"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.cjwsc.idcm.widget.DampScrollView>
+
+</LinearLayout>

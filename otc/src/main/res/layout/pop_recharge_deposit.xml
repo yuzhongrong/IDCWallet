@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_pop"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp30"
+            android:gravity="center"
+            android:text="@string/str_otc_deposit_not_enough"
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp30"
+            android:gravity="center"
+            android:text="@string/str_otc_deposit_not_content"
+            android:textColor="@color/tip_black"
+            android:textSize="@dimen/sp15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp24"
+            android:layout_marginTop="@dimen/dp40">
+
+            <TextView
+                android:id="@+id/btn_back_close"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/otc_ripple_blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginRight="@dimen/dp6"
+                android:text="@string/wait_finish"
+                android:textAllCaps="false"
+                android:textColor="@color/tipper_blue_color"
+                android:textSize="@dimen/sp15" />
+            <TextView
+                android:id="@+id/btn_go_set"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/sw_ripple_btn_bg"
+                android:clickable="true"
+                android:layout_marginRight="@dimen/dp16"
+                android:layout_marginLeft="@dimen/dp6"
+                android:gravity="center"
+                android:text="@string/str_otc_recharge_deposit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp15" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

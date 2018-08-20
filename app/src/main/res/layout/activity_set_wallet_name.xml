@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:id="@+id/ll_wallet_name_head"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp64"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/mr_back_layout"
+            android:layout_width="@dimen/dp44"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp16">
+
+            <ImageView
+                android:layout_width="@dimen/dp18"
+                android:layout_height="@dimen/dp18"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp12"
+                android:src="@mipmap/img_find_back" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wallet_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_warp_wallet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/img_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/str_input_wallet_id"
+                android:layout_marginBottom="@dimen/dp19"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/tip_black"
+                android:layout_marginTop="@dimen/dp15" />
+
+            <foxidcw.android.idcw.common.widget.IDCWInputLayout
+                style="@style/TextInputLayoutWrapStyle"
+                android:layout_marginStart="@dimen/dp42"
+                android:layout_marginEnd="@dimen/dp42"
+                android:layout_marginTop="@dimen/dp12"
+                >
+                <EditText
+                    android:id="@+id/ed_set_wallet_name"
+                    style="@style/LoginEdit"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="Wallet ID"
+                    android:inputType="textCapCharacters"
+                    android:singleLine="true"
+                    android:textColorHint="@color/a_c0c7cd" />
+            </foxidcw.android.idcw.common.widget.IDCWInputLayout>
+
+
+            <View
+                android:id="@+id/view_set_wallet"
+                android:layout_width="@dimen/dp260"
+                android:layout_height="@dimen/dp0.5"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp6"
+                android:background="@color/a_a0a5ab" />
+
+            <foxidcw.android.idcw.common.widget.IDCWInputLayout
+                style="@style/TextInputLayoutWrapStyle"
+                android:layout_marginStart="@dimen/dp42"
+                android:layout_marginEnd="@dimen/dp42">
+                <EditText
+                    android:id="@+id/ed_get_wallet_invite"
+                    style="@style/LoginEdit"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/str_app_invite_txt"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:singleLine="true"
+                    android:textColorHint="@color/a_c0c7cd"
+                    android:textSize="@dimen/sp14" />
+            </foxidcw.android.idcw.common.widget.IDCWInputLayout>
+
+
+            <View
+                android:id="@+id/view_set_invite"
+                android:layout_width="@dimen/dp260"
+                android:layout_height="@dimen/dp0.5"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp6"
+                android:background="@color/a_a0a5ab" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp26"
+                android:gravity="center"
+                android:text="@string/str_set_name_other"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp8"
+                android:gravity="center"
+                android:text="@string/str_set_name_sure"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/btn_set_wallet_next"
+                android:layout_width="@dimen/dp290"
+                android:layout_height="@dimen/dp40"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp40"
+                android:background="@drawable/item_gray_black"
+                android:gravity="center"
+                android:text="@string/tv_next_more_step"
+                android:textAllCaps="false"
+                android:textColor="@color/gray_90"
+                android:textSize="@dimen/sp15" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
